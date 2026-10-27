@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第 6 章 文以外の要素を使い分ける &mdash; 技術文書の書き方</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=791f3ba4" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=19757887"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/translations.js?v=4755f45a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="第 7 章 文書の種類別の書き方" href="07_document_types.html" />
+    <link rel="prev" title="第 5 章 表記をそろえる" href="05_notation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            技術文書の書き方
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">第 1 章 はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_preparation.html">第 2 章 書く前の準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_structure.html">第 3 章 構成を組み立てる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_sentences.html">第 4 章 文を書く</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_notation.html">第 5 章 表記をそろえる</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第 6 章 文以外の要素を使い分ける</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">箇条書き</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">図</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">コード例</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">注記</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">リンク</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_document_types.html">第 7 章 文書の種類別の書き方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_review.html">第 8 章 レビューと保守</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_checklist.html">付録 A チェックリスト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_templates.html">付録 B テンプレート集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">技術文書の書き方</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">第 6 章 文以外の要素を使い分ける</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>第 6 章 文以外の要素を使い分ける<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>技術文書は文だけで構成されるわけではない。箇条書き、表、図、コード例を適切に使うと、文だけで書くよりも正確に、少ない分量で情報を伝えられる。本章では、これらの要素と、注記、リンクの使い方を説明する。</p>
+<section id="id2">
+<h2>箇条書き<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>箇条書きは、並列の関係にある複数の項目を示すときに使う。項目に順序がある場合は番号付きの箇条書きを、順序がない場合は記号付きの箇条書きを使う。手順は必ず番号付きにする。</p>
+<p>箇条書きの項目は、粒度と形をそろえる。文で書く項目と体言止めの項目を混ぜない。</p>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-number">表 22 </span><span class="caption-text">箇条書きの形をそろえる</span><a class="headerlink" href="#id8" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>悪い例</p></th>
+<th class="head"><p>良い例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ul class="simple">
+<li><p>ログの解析</p></li>
+<li><p>エラーを検出したら、メールで通知する。</p></li>
+<li><p>レポート出力機能</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>ログの解析</p></li>
+<li><p>エラーの通知</p></li>
+<li><p>レポートの出力</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>箇条書きにも限界がある。箇条書きは項目どうしの関係（原因と結果、条件と帰結など）を表せない。論理の流れを伝えたい箇所は、箇条書きにせず文章で書く。また、箇条書きの入れ子は 2 段までにとどめる。</p>
+</section>
+<section id="id3">
+<h2>表<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>表は、複数の対象を複数の観点で比較したり、同じ形式の情報を一覧にしたりするときに使う。同じ内容を文章で書くと、読者は頭の中で表を組み立てなければならない。</p>
+<p>次の例は、3 種類の料金プランを文章で書いた場合と、表で書いた場合を比べたものである。</p>
+<p>悪い例（文章で書いた場合）：</p>
+<blockquote>
+<div><p>プラン A は月額 1,000 円でストレージ容量が 10 GB、プラン B は月額 3,000 円で 50 GB、プラン C は月額 8,000 円で 200 GB である。</p>
+</div></blockquote>
+<p>良い例（表で書いた場合）：</p>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 23 </span><span class="caption-text">料金プランの比較</span><a class="headerlink" href="#id9" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>プラン</p></th>
+<th class="head"><p>月額（円）</p></th>
+<th class="head"><p>ストレージ容量（GB）</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>1,000</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>B</p></td>
+<td><p>3,000</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>C</p></td>
+<td><p>8,000</p></td>
+<td><p>200</p></td>
+</tr>
+</tbody>
+</table>
+<p>表で書くと、プランどうしの違いが一目で分かる。</p>
+<p>表を作るときは、次の点に注意する。</p>
+<ul class="simple">
+<li><p>表には、内容を表すタイトルを付ける。</p></li>
+<li><p>列見出しを必ず付ける。単位は列見出しにまとめて書き、セルには数値だけを書く。</p></li>
+<li><p>セルには短い語句を書く。長い文章が必要な場合は、表の外に書く。</p></li>
+<li><p>比較の観点が多すぎる場合は、表を分ける。</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>図<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>図は、構造（システムの構成など）、流れ（処理や作業の手順など）、関係（データの対応など）を伝えるときに使う。文章では長くなる説明も、図であれば一目で伝わることがある。</p>
+<p>図を使うときは、次の点に注意する。</p>
+<ul class="simple">
+<li><p>1 枚の図で伝えることは一つに絞る。</p></li>
+<li><p>図には番号とキャプションを付け、本文から「<a class="reference internal" href="03_structure.html#fig-inverted-pyramid"><span class="std std-numref">図 3</span></a> に示すように」のように参照する。</p></li>
+<li><p>図の要点は本文でも説明する。図だけを置いて説明を読者に任せない。</p></li>
+<li><p>画像には代替テキストを付ける。画像を表示できない環境の読者や、スクリーンリーダーの利用者にも内容が伝わるようにする。</p></li>
+</ul>
+<p>図の元データは、文書と一緒に管理する。画像だけを保存していると、図を修正したくなったときに作り直すことになる。Graphviz、Mermaid、PlantUML のようにテキストから図を生成するツールを使うとよい。図の変更履歴をバージョン管理システムで追跡でき、レビューもしやすくなる。本書の図も、Graphviz と matplotlib を使ってビルド時に生成している。</p>
+</section>
+<section id="id5">
+<h2>コード例<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>コード例は、技術文書の中で最も参照される要素の一つである。読者はコード例をそのまま複製して使うことが多い。そのため、コード例には文章以上の正確さが求められる。</p>
+<p>コード例を書くときは、次の点に注意する。</p>
+<ul class="simple">
+<li><p>そのまま実行できる完全な例を示す。実行に必要な import 文や前提となる設定を省略しない。</p></li>
+<li><p>やむを得ず省略する場合は、省略したことを明示する。</p></li>
+<li><p>読者が自分の値に置き換える箇所は、<code class="docutils literal notranslate"><span class="pre">&lt;API_TOKEN&gt;</span></code> のように置き換えるべき箇所であることが分かる書き方にする。</p></li>
+<li><p>書き手自身が実行し、正しく動作することを確認する。</p></li>
+<li><p>本文からコードの特定の行を参照する場合は、行番号を付ける。</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="linenos">2</span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;config.json&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+<span class="linenos">5</span><span class="nb">print</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;timeout&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>上のコード例では、4 行目で設定ファイルを読み込み、5 行目でタイムアウトの設定値を表示する。このように行番号を付けておくと、本文から特定の行を正確に参照できる。</p>
+<p>コマンドの例では、読者が入力するコマンドと、コマンドが出力する結果を区別する。次の例では、入力するコマンドの先頭にプロンプト記号 <code class="docutils literal notranslate"><span class="pre">$</span></code> を付け、出力とは別のコードブロックに分けている。</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="gp">$ </span>python<span class="w"> </span>--version
+</pre></div>
+</div>
+<p>出力例：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>Python 3.12.4
+</pre></div>
+</div>
+<p>ただし、プロンプト記号を付けると、読者がコマンドを複製したときに記号まで含まれてしまう。プロンプト記号を付けるかどうかは、文書の中で統一する。</p>
+</section>
+<section id="id6">
+<h2>注記<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>注記は、本文の流れから外れるが読者に伝えたい情報を、目立つように示すための要素である。注記には重要度に応じた種類がある。</p>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-number">表 24 </span><span class="caption-text">注記の種類と使い分けの例</span><a class="headerlink" href="#id10" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>種類</p></th>
+<th class="head"><p>用途</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>注（Note）</p></td>
+<td><p>補足情報。読まなくても作業はできるが、知っておくと役に立つ情報。</p></td>
+</tr>
+<tr class="row-odd"><td><p>注意（Caution）</p></td>
+<td><p>守らないと、作業の失敗や想定外の結果を招くおそれがある事項。</p></td>
+</tr>
+<tr class="row-even"><td><p>警告（Warning）</p></td>
+<td><p>守らないと、データの消失や障害など、重大な結果を招くおそれがある事項。</p></td>
+</tr>
+</tbody>
+</table>
+<p>注記を表示したときの見え方の例を次に示す。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>設定ファイルの書式は YAML である。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>このコマンドは、データベースのすべてのテーブルを削除する。実行する前に、接続先が検証環境であることを確認する。</p>
+</div>
+<p>注記には、次の注意点がある。</p>
+<ul class="simple">
+<li><p><strong>注記を使いすぎない</strong>：注記が多すぎると、読者は注記を読み飛ばすようになり、本当に重要な警告まで見落とす。</p></li>
+<li><p><strong>警告は操作の前に置く</strong>：警告を操作の後に置くと、読者は警告を読む前に操作してしまう。</p></li>
+<li><p><strong>重要度の判断をそろえる</strong>：同じ程度の危険には、文書全体で同じ種類の注記を使う。</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>リンク<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>リンクは、関連する情報へ読者を案内する。リンクを設けるときは、リンク文字列を読むだけで行き先が分かるようにする。</p>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-number">表 25 </span><span class="caption-text">リンク文字列の書き方</span><a class="headerlink" href="#id11" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>悪い例</p></th>
+<th class="head"><p>良い例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>認証の詳細は、こちらを参照。</p></td>
+<td><p>認証の詳細は、「API リファレンス」の「認証」の節を参照。</p></td>
+</tr>
+</tbody>
+</table>
+<p>「こちら」「ここ」のようなリンク文字列は、リンクだけを拾い読みする読者や、スクリーンリーダーでリンクの一覧を聞く読者には意味が伝わらない。</p>
+<p>外部のサイトへのリンクは、移転や削除によっていずれ切れる。リンク切れは定期的に検査する（「<a class="reference internal" href="08_review.html"><span class="doc">第 8 章 レビューと保守</span></a>」を参照）。</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="05_notation.html" class="btn btn-neutral float-left" title="第 5 章 表記をそろえる" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="07_document_types.html" class="btn btn-neutral float-right" title="第 7 章 文書の種類別の書き方" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第 7 章 文書の種類別の書き方 &mdash; 技術文書の書き方</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=791f3ba4" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=19757887"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/translations.js?v=4755f45a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="第 8 章 レビューと保守" href="08_review.html" />
+    <link rel="prev" title="第 6 章 文以外の要素を使い分ける" href="06_elements.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            技術文書の書き方
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">第 1 章 はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_preparation.html">第 2 章 書く前の準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_structure.html">第 3 章 構成を組み立てる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_sentences.html">第 4 章 文を書く</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_notation.html">第 5 章 表記をそろえる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_elements.html">第 6 章 文以外の要素を使い分ける</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第 7 章 文書の種類別の書き方</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#readme">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">設計書</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api">API リファレンス</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">手順書</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">障害報告書</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issue">Issue、プルリクエスト、コミットメッセージ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Issue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">プルリクエスト</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">コミットメッセージ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08_review.html">第 8 章 レビューと保守</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_checklist.html">付録 A チェックリスト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_templates.html">付録 B テンプレート集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">技術文書の書き方</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">第 7 章 文書の種類別の書き方</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>第 7 章 文書の種類別の書き方<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>本章では、エンジニアがよく書く文書について、目的、読者、記載すべき項目、よくある失敗を示す。各文書のテンプレートは「<a class="reference internal" href="appendix_b_templates.html"><span class="doc">付録 B テンプレート集</span></a>」に収録した。</p>
+<section id="readme">
+<h2>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h2>
+<p>README は、ソフトウェアやリポジトリの入り口となる文書である。初めて訪れた読者が、そのソフトウェアが何をするものかを理解し、使い始められるようにすることを目的とする。</p>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-number">表 26 </span><span class="caption-text">README に記載すべき項目</span><a class="headerlink" href="#id8" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>名前と概要</p></td>
+<td><p>ソフトウェアが何をするものかを一文で書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>動作環境</p></td>
+<td><p>対応する OS、言語やランタイムのバージョン、依存するソフトウェアを書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>インストール</p></td>
+<td><p>インストールの手順をコマンドで示す。</p></td>
+</tr>
+<tr class="row-odd"><td><p>使い方</p></td>
+<td><p>最小の使用例を、コマンドと期待される出力の組で示す。</p></td>
+</tr>
+<tr class="row-even"><td><p>関連文書</p></td>
+<td><p>チュートリアル、リファレンス、設計書などへのリンクを示す。</p></td>
+</tr>
+<tr class="row-odd"><td><p>問い合わせ先</p></td>
+<td><p>不具合の報告方法や質問の窓口を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>ライセンス</p></td>
+<td><p>ライセンスの名前を書く。</p></td>
+</tr>
+</tbody>
+</table>
+<p>よくある失敗は次のとおりである。</p>
+<ul class="simple">
+<li><p>冒頭に、そのソフトウェアが何をするものかが書かれていない。</p></li>
+<li><p>インストール手順が、書き手の環境でしか動かない。</p></li>
+<li><p>ソフトウェアの更新に README の更新が追いついておらず、記載されたコマンドが動かない。</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>設計書<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>設計書は、システムや機能をどのように作るか、そしてなぜそのように作るかを共有する文書である。読者は、レビュアー、実装を担当する開発者、そして将来の保守担当者である。</p>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 27 </span><span class="caption-text">設計書に記載すべき項目</span><a class="headerlink" href="#id9" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>背景と目的</p></td>
+<td><p>この設計が必要な理由と、解決したい課題を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>スコープ</p></td>
+<td><p>対象とすることと、対象としないことを書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>要求</p></td>
+<td><p>満たすべき機能要求と非機能要求（性能、可用性など）を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>設計の概要</p></td>
+<td><p>全体の構成を図と文章で示す。</p></td>
+</tr>
+<tr class="row-even"><td><p>詳細設計</p></td>
+<td><p>コンポーネントの振る舞い、データ構造、インターフェースを書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>検討した代替案</p></td>
+<td><p>検討したほかの案と、採用しなかった理由を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>未解決の課題</p></td>
+<td><p>まだ決まっていないことや、追加の調査が必要なことを書く。</p></td>
+</tr>
+</tbody>
+</table>
+<p>設計書で最も価値が高いのは、「なぜ」の情報である。何を作ったかはコードを読めば分かるが、なぜそのように作ったのか、なぜほかの案を選ばなかったのかは、コードからは分からない。この情報がないと、将来の保守担当者は、設計の前提を知らないまま変更を加えることになる。</p>
+<p>よくある失敗は次のとおりである。</p>
+<ul class="simple">
+<li><p>実装の詳細だけが書かれ、設計の理由や検討した代替案が書かれていない。</p></li>
+<li><p>対象としないことが書かれていないため、レビューで範囲外の議論が続く。</p></li>
+<li><p>設計の変更が反映されず、実装と食い違ったまま放置される。</p></li>
+</ul>
+<p>設計上の重要な判断を、判断ごとに短い文書として記録する <a class="reference internal" href="glossary.html#term-ADR"><span class="xref std std-term">ADR</span></a> という手法もある。ADR は、判断の背景、判断の内容、その結果を記録する。</p>
+</section>
+<section id="api">
+<h2>API リファレンス<a class="headerlink" href="#api" title="Link to this heading"></a></h2>
+<p>API リファレンスは、関数、クラス、エンドポイントなどの仕様を正確に記述する文書である。読者は、API を使う開発者である。読者は API リファレンスを最初から順に読むことはなく、必要な項目を探して参照する。そのため、すべての項目を同じ形式で記述する。</p>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-number">表 28 </span><span class="caption-text">API リファレンスに記載すべき項目</span><a class="headerlink" href="#id10" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>名前と形式</p></td>
+<td><p>関数名と引数の並び、エンドポイントの URL と HTTP メソッドを書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>説明</p></td>
+<td><p>その API が何をするかを書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>パラメーター</p></td>
+<td><p>各パラメーターの名前、型、必須かどうか、既定値、取りうる値の範囲を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>戻り値</p></td>
+<td><p>戻り値の型と意味を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>エラー</p></td>
+<td><p>発生しうる例外やエラーコードと、それが発生する条件を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>使用例</p></td>
+<td><p>典型的な使い方をコード例で示す。</p></td>
+</tr>
+</tbody>
+</table>
+<p>API リファレンスは、ソースコードのコメントから生成すると、コードとの食い違いを防ぎやすい。次の例は、Python の docstring に記述した API リファレンスである。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">def</span><span class="w"> </span><span class="nf">get_user</span><span class="p">(</span><span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">include_deleted</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="sd">&quot;&quot;&quot;ユーザーの情報を取得する。</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="sd">    Args:</span>
+<span class="linenos"> 5</span><span class="sd">        user_id: 取得するユーザーの ID。1 以上の整数。</span>
+<span class="linenos"> 6</span><span class="sd">        include_deleted: True の場合、削除済みのユーザーも取得の対象にする。</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="sd">    Returns:</span>
+<span class="linenos"> 9</span><span class="sd">        指定した ID のユーザー。</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="sd">    Raises:</span>
+<span class="linenos">12</span><span class="sd">        UserNotFoundError: 指定した ID のユーザーが存在しない場合。</span>
+<span class="linenos">13</span><span class="sd">        ValueError: user_id が 1 未満の場合。</span>
+<span class="linenos">14</span><span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>よくある失敗は次のとおりである。</p>
+<ul class="simple">
+<li><p>説明が名前の言い換えになっている。たとえば、<code class="docutils literal notranslate"><span class="pre">get_user</span></code> の説明が「ユーザーを取得する」だけで、どのような条件で何が返るのかが書かれていない。</p></li>
+<li><p>境界値やエラーの条件が書かれていない。</p></li>
+<li><p>使用例がない、または使用例が動かない。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>手順書<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>手順書は、作業を誤りなく再現するための文書である。読者は作業者であり、書き手とは別の人が作業することを前提に書く。手順書の誤りは、本番環境での障害に直結することがある。</p>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-number">表 29 </span><span class="caption-text">手順書に記載すべき項目</span><a class="headerlink" href="#id11" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>目的</p></td>
+<td><p>この手順で何を達成するかを書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>前提条件</p></td>
+<td><p>必要な権限、ツール、事前に完了しているべき作業を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>所要時間</p></td>
+<td><p>作業全体の所要時間の目安を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>手順</p></td>
+<td><p>番号付きの箇条書きで、一つの項目に一つの操作を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>期待結果</p></td>
+<td><p>各手順が成功したときに表示される内容や、確認できる状態を書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>作業後の確認</p></td>
+<td><p>作業が正しく完了したことを確認する方法を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>切り戻し手順</p></td>
+<td><p>作業が失敗したときに、作業前の状態に戻す手順を書く。</p></td>
+</tr>
+</tbody>
+</table>
+<p>各手順には、操作と期待結果を組にして書く。期待結果がないと、作業者は操作が成功したかどうかを判断できない。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>3. 次のコマンドで、アプリケーションのサービスを停止する。
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span>   $ sudo systemctl stop myapp
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span>   期待結果：エラーが表示されずに、プロンプトが戻る。
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span>4. 次のコマンドで、サービスが停止したことを確認する。
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>   $ systemctl is-active myapp
+<span class="linenos">10</span>
+<span class="linenos">11</span>   期待結果：「inactive」と表示される。
+</pre></div>
+</div>
+<p>よくある失敗は次のとおりである。</p>
+<ul class="simple">
+<li><p>期待結果が書かれていない。</p></li>
+<li><p>「適宜」「必要に応じて」のように、判断を作業者に委ねる表現がある。</p></li>
+<li><p>作業の対象が本番環境なのか検証環境なのかが明記されていない。</p></li>
+<li><p>切り戻し手順がない。</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>障害報告書<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>障害報告書は、障害の経緯と原因を記録し、再発を防ぐための文書である。<a class="reference internal" href="glossary.html#term-11"><span class="xref std std-term">ポストモーテム</span></a>とも呼ばれる。読者は、開発者、運用担当者、管理者など、障害に関係するすべての人である。</p>
+<table class="docutils align-default" id="id12">
+<caption><span class="caption-number">表 30 </span><span class="caption-text">障害報告書に記載すべき項目</span><a class="headerlink" href="#id12" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>項目</p></th>
+<th class="head"><p>内容</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>概要</p></td>
+<td><p>何が起き、どのような影響があり、どう解決したかを短く書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>影響</p></td>
+<td><p>影響の期間、範囲、大きさを書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>時系列</p></td>
+<td><p>検知から解決までの出来事を、時刻とともに書く。時刻のタイムゾーンを明記する。</p></td>
+</tr>
+<tr class="row-odd"><td><p>根本原因</p></td>
+<td><p>障害の直接の原因と、それが起きた背景を書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>対応</p></td>
+<td><p>障害を解消するために行ったことを書く。</p></td>
+</tr>
+<tr class="row-odd"><td><p>再発防止策</p></td>
+<td><p>対策ごとに担当と期限を決めて書く。</p></td>
+</tr>
+<tr class="row-even"><td><p>教訓</p></td>
+<td><p>うまくいったことと、うまくいかなかったことを書く。</p></td>
+</tr>
+</tbody>
+</table>
+<p>障害報告書は、個人の責任を追及するためのものではない。人の誤りを前提として、それを防げなかった仕組みの問題を明らかにするために書く。このように個人を責めない姿勢を<a class="reference internal" href="glossary.html#term-9"><span class="xref std std-term">ブレームレス</span></a>と呼ぶ。責任追及の場になると、関係者は事実を隠すようになり、正確な記録が残らなくなる。</p>
+<p>よくある失敗は次のとおりである。</p>
+<ul class="simple">
+<li><p>「担当者が手順を誤った」で原因の分析が終わっている。なぜ誤ったのか、なぜ誤りを防げなかったのかまで掘り下げていない。</p></li>
+<li><p>再発防止策が「今後は注意する」のように、具体的な行動になっていない。</p></li>
+<li><p>再発防止策に担当と期限がなく、実行されないまま忘れられる。</p></li>
+</ul>
+</section>
+<section id="issue">
+<h2>Issue、プルリクエスト、コミットメッセージ<a class="headerlink" href="#issue" title="Link to this heading"></a></h2>
+<p>Issue、プルリクエスト、コミットメッセージは短い文書だが、書かれる回数が多く、開発の記録として長く参照される。</p>
+<section id="id5">
+<h3>Issue<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>不具合を報告する Issue には、次の項目を書く。読者である開発者が、不具合を再現できることが目標である。</p>
+<ul class="simple">
+<li><p>再現手順</p></li>
+<li><p>期待した結果</p></li>
+<li><p>実際の結果</p></li>
+<li><p>環境（OS、バージョンなど）</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>プルリクエスト<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>プルリクエストの説明には、次の項目を書く。レビュアーが、変更の意図を理解したうえでレビューできることが目標である。</p>
+<ul class="simple">
+<li><p>変更の目的（関連する Issue へのリンク）</p></li>
+<li><p>変更の内容</p></li>
+<li><p>動作の確認方法</p></li>
+<li><p>レビューで特に見てほしい点</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>コミットメッセージ<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>コミットメッセージは、1 行目に変更の要約を書き、1 行空けて本文を書く形式が広く使われている。1 行目は、コミットの一覧に表示されるため短くまとめる。本文には、変更の内容よりも変更の理由を書く。変更の内容は差分を見れば分かるが、理由は差分からは分からないためである。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>ログイン時のセッションの有効期限を 30 分から 8 時間に延長する
+<span class="linenos">2</span>
+<span class="linenos">3</span>業務時間中に何度もログインし直す必要があるという問い合わせが多いため。
+<span class="linenos">4</span>有効期限は、セキュリティ部門と合意した上限である 8 時間とした。
+<span class="linenos">5</span>
+<span class="linenos">6</span>関連する Issue: #128
+</pre></div>
+</div>
+<p>コミットメッセージの形式を統一するための規約として、Conventional Commits がある。チームで規約を採用する場合は、規約を文書にして共有する。</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="06_elements.html" class="btn btn-neutral float-left" title="第 6 章 文以外の要素を使い分ける" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="08_review.html" class="btn btn-neutral float-right" title="第 8 章 レビューと保守" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

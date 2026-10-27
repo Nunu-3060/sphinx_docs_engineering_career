@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第 2 章 書く前の準備 &mdash; 技術文書の書き方</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=791f3ba4" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=19757887"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../_static/translations.js?v=4755f45a"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="第 3 章 構成を組み立てる" href="03_structure.html" />
+    <link rel="prev" title="第 1 章 はじめに" href="01_introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            技術文書の書き方
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">第 1 章 はじめに</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第 2 章 書く前の準備</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">読者を定める</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">目的を一文で書く</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">文書の種類を選ぶ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">情報を集め、取捨選択する</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_structure.html">第 3 章 構成を組み立てる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_sentences.html">第 4 章 文を書く</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_notation.html">第 5 章 表記をそろえる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_elements.html">第 6 章 文以外の要素を使い分ける</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_document_types.html">第 7 章 文書の種類別の書き方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_review.html">第 8 章 レビューと保守</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_checklist.html">付録 A チェックリスト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_templates.html">付録 B テンプレート集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">技術文書の書き方</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">第 2 章 書く前の準備</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>第 2 章 書く前の準備<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>よい技術文書を書けるかどうかは、書き始める前の準備でほぼ決まる。本章では、読者を定める、目的を定める、文書の種類を選ぶ、情報を集めるという 4 段階の準備を説明する。</p>
+<section id="id2">
+<h2>読者を定める<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>技術文書は特定の読者のために書く。読者が決まらなければ、何をどこまで説明するかも決まらない。読者を定めるときは、次の 3 点を考える。</p>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-number">表 4 </span><span class="caption-text">読者を定めるための観点</span><a class="headerlink" href="#id6" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 40.0%" />
+<col style="width: 45.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>観点</p></th>
+<th class="head"><p>問い</p></th>
+<th class="head"><p>例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>前提知識</p></td>
+<td><p>読者は何を知っていて、何を知らないか。</p></td>
+<td><p>Python は書けるが、社内のデプロイ基盤は使ったことがない。</p></td>
+</tr>
+<tr class="row-odd"><td><p>読む目的</p></td>
+<td><p>読者は文書を読んで何をしたいか。</p></td>
+<td><p>新しいサービスを手元の環境で動かしたい。</p></td>
+</tr>
+<tr class="row-even"><td><p>読む状況</p></td>
+<td><p>読者はどのような状況で文書を読むか。</p></td>
+<td><p>障害対応の最中に、急いで復旧手順を探している。</p></td>
+</tr>
+</tbody>
+</table>
+<p>読者を「エンジニア全般」のように広く設定すると、説明の水準が定まらない。前提知識の多い読者には冗長に、少ない読者には不親切になり、結局どちらの読者にも合わない文書になる。そこで、実在する同僚のような具体的な一人の人物を思い浮かべ、その人に向けて書くとよい。このように想定した読者像を<a class="reference internal" href="glossary.html#term-10"><span class="xref std std-term">ペルソナ</span></a>と呼ぶ。</p>
+<p>前提知識が大きく異なる複数の読者がいる場合は、読者ごとに文書を分けるか、読者ごとに読むべき章を明示する。</p>
+<p>定めた読者は、文書の冒頭に明記する。読者は自分が対象に含まれるかどうかをすぐに判断でき、書き手も執筆中に読者を見失わずに済む。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>## 対象読者
+<span class="linenos">2</span>
+<span class="linenos">3</span>本手順書は、Linux の基本的なコマンド操作ができる運用担当者を対象とする。
+<span class="linenos">4</span>PostgreSQL の操作経験は前提としない。
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>目的を一文で書く<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>次に、文書の目的を「この文書を読んだ読者は、○○できるようになる」という形の一文で書く。目的は「何について書くか」ではなく、「読者が何をできるようになるか」で表す。</p>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">表 5 </span><span class="caption-text">文書の目的の書き方</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>悪い例</p></th>
+<th class="head"><p>良い例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>認証基盤について説明する。</p></td>
+<td><p>この文書を読んだ開発者は、自分のサービスに社内認証基盤を使ったログイン機能を組み込めるようになる。</p></td>
+</tr>
+</tbody>
+</table>
+<p>悪い例は話題を示しているだけで、どこまで書けば完成なのかが分からない。良い例であれば、ログイン機能を組み込むのに必要な情報は書き、必要のない情報は省くという判断ができる。</p>
+<p>目的を一文で書けない場合は、書き手自身が目的を理解していないか、一つの文書に複数の目的を詰め込もうとしている可能性が高い。後者の場合は文書を分割する（「<a class="reference internal" href="03_structure.html"><span class="doc">第 3 章 構成を組み立てる</span></a>」を参照）。</p>
+</section>
+<section id="id4">
+<h2>文書の種類を選ぶ<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>読者と目的が決まったら、文書の種類を選ぶ。種類を選ぶときの指針として、Daniele Procida が提唱した <a class="reference internal" href="glossary.html#term-Diataxis"><span class="xref std std-term">Diátaxis</span></a> という枠組みが広く知られている。Diátaxis は、技術文書を読者の必要に応じて 4 種類に分類する（<a class="reference internal" href="#fig-diataxis"><span class="std std-numref">図 2</span></a>）。</p>
+<figure class="align-center" id="id8">
+<span id="fig-diataxis"></span><a class="reference internal image-reference" href="../_images/diataxis.png"><img alt="縦軸を行動と認識、横軸を習得と適用とし、チュートリアル、ハウツーガイド、解説、リファレンスを 4 象限に配置した図" src="../_images/diataxis.png" style="width: 520px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 2 </span><span class="caption-text">Diátaxis による技術文書の 4 分類</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>縦軸は、読者が手を動かしたいのか（行動）、知識を得たいのか（認識）を表す。横軸は、読者が学んでいる最中なのか（習得）、実際の仕事に取り組んでいる最中なのか（適用）を表す。</p>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">表 6 </span><span class="caption-text">Diátaxis の 4 分類</span><a class="headerlink" href="#id9" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 18.0%" />
+<col style="width: 30.0%" />
+<col style="width: 52.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>種類</p></th>
+<th class="head"><p>読者の状況</p></th>
+<th class="head"><p>書き方の要点</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>チュートリアル</p></td>
+<td><p>初心者が、手を動かしながら学びたい。</p></td>
+<td><p>決まった手順で必ず成功する体験を提供する。選択肢や詳細な説明は最小限にする。</p></td>
+</tr>
+<tr class="row-odd"><td><p>ハウツーガイド</p></td>
+<td><p>基本を知っている読者が、特定の課題を解決したい。</p></td>
+<td><p>課題の解決に必要な手順だけを示す。基礎の説明は省く。</p></td>
+</tr>
+<tr class="row-even"><td><p>リファレンス</p></td>
+<td><p>読者が、仕様を正確に調べたい。</p></td>
+<td><p>網羅的かつ正確に、一定の形式で記述する。説明や意見を混ぜない。</p></td>
+</tr>
+<tr class="row-odd"><td><p>解説</p></td>
+<td><p>読者が、背景や設計の意図を理解したい。</p></td>
+<td><p>「なぜ」に答える。手順や仕様の列挙ではなく、考え方と経緯を説明する。</p></td>
+</tr>
+</tbody>
+</table>
+<p>よくある失敗は、これらの種類を一つの文書に混ぜることである。たとえば、チュートリアルの途中に全オプションの一覧（リファレンス）や設計の経緯（解説）を挟むと、初心者は手順の流れを見失う。種類の異なる内容は別の文書や別の節に分け、リンクで結ぶ。</p>
+</section>
+<section id="id5">
+<h2>情報を集め、取捨選択する<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>書く内容は、次のような情報源から集める。</p>
+<ul class="simple">
+<li><p>ソースコード、設定ファイル、コミット履歴</p></li>
+<li><p>既存の文書、Issue、チャットの記録</p></li>
+<li><p>開発者や運用担当者への聞き取り</p></li>
+<li><p>書き手自身による操作や検証</p></li>
+</ul>
+<p>手順書やチュートリアルを書くときは、必ず書き手自身が手順どおりに操作して、結果を確認する。記憶や推測だけで書いた手順には、省略された前提や誤ったコマンドが紛れ込みやすい。</p>
+<p>集めた情報をすべて書く必要はない。取捨選択の基準は、その情報が読者の目的の達成に必要かどうかである。書き手が苦労して調べた経緯であっても、読者の目的に関係がなければ書かない。ただし、設計の判断に至った経緯は、将来の保守担当者にとって重要な情報になる。この種の情報は設計書の「検討した代替案」の節に残す（「<a class="reference internal" href="07_document_types.html"><span class="doc">第 7 章 文書の種類別の書き方</span></a>」を参照）。</p>
+<p>準備の結果は、執筆を始める前に短いメモにまとめておくとよい。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>読者：入社 1 年目の開発者。Python は書けるが、社内のデプロイ基盤は未経験。
+<span class="linenos">2</span>目的：この文書を読んだ開発者は、自分のサービスを検証環境にデプロイできるようになる。
+<span class="linenos">3</span>種類：ハウツーガイド
+<span class="linenos">4</span>範囲：検証環境へのデプロイまで。本番環境へのデプロイは別の文書で扱う。
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="01_introduction.html" class="btn btn-neutral float-left" title="第 1 章 はじめに" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="03_structure.html" class="btn btn-neutral float-right" title="第 3 章 構成を組み立てる" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
