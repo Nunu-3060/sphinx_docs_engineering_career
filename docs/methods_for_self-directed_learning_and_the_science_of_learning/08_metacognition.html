@@ -1,0 +1,915 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第 8 章 メタ認知と自己調整学習 &mdash; 独学の方法と学習科学 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4034263e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=19757887"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=35a8b989"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="第 9 章 動機づけと習慣" href="09_motivation_habits.html" />
+    <link rel="prev" title="第 7 章 熟達化と意図的練習" href="07_expertise.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            独学の方法と学習科学
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">第 I 部 基礎</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">第 1 章 はじめに</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id2">本書の目的と対象読者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id3">独学がうまくいかない典型的な理由</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id4">効果の低い学び方に偏っている</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id6">計画倒れになる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id7">全体像がないまま細部に入り込む</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id8">本書の構成と読み方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id9">根拠の強さの表し方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id10">研究知見を読む際の注意</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id11">効果の大きさを見る</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id12">実験室と実務の違いを意識する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_introduction.html#id14">自分の学習で確かめる</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="01_introduction.html#id15">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_self_directed_learning.html">第 2 章 独学とは何か</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id2">独学の定義</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id3">自己主導型学習</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id6">独学の四つの側面</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#garrison">Garrison のモデル</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id9">学校での学習との違い</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id10">独学の強みと弱み</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id11">強み</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id12">弱み</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id14">完全な自力学習の限界</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id18">独学者に求められる力</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id19">目標を設定する力</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id20">教材を選ぶ力</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id21">進捗を自己評価する力</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id22">他者の力を借りる力</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id23">エンジニアにとっての独学</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id24">技術の変化と陳腐化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_self_directed_learning.html#id25">業務と学習の両立</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id26">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_self_directed_learning.html#id27">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_memory.html">第 3 章 学習と記憶の仕組み</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id2">記憶のモデル</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id3">三つの記憶</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id5">作業記憶の構成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id8">作業記憶の容量</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id11">チャンクとスキーマ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id12">チャンク</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id13">スキーマ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id14">認知負荷理論</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id15">認知負荷とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id19">学習への含意</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id20">符号化・貯蔵・検索</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id21">符号化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id22">貯蔵</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id23">検索</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id24">忘却</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id25">エビングハウスの忘却曲線</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id28">なぜ忘れるのか</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id30">復習による忘却曲線の変化</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id31">貯蔵強度と検索強度</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id32">二つの強さ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_memory.html#id34">理論の重要な含意</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id35">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_memory.html#id36">まとめ</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">第 II 部 理論</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="04_effective_techniques.html">第 4 章 効果が確かめられた学習法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#dunlosky-10">Dunlosky らによる 10 技法の評価</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#ch04-retrieval">検索練習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id4">検索練習とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id5">代表的な研究</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id12">思い出せなくても効果がある</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id15">検索練習の方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#ch04-spacing">分散学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id17">分散学習とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id19">最適な間隔</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id21">検索練習との組み合わせ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id25">分散学習を妨げるもの</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#ch04-interleaving">交互学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id27">交互学習とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id30">なぜ効果があるのか</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id31">効果が得られる条件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#id33">精緻化質問と自己説明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id34">精緻化質問</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id36">自己説明</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#id40">具体例と二重符号化</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id41">具体例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id43">二重符号化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id46">生成効果</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#id48">効果が低い学習法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id49">再読</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id50">ハイライト・下線</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id51">要約</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#ch04-desirable-difficulties">望ましい困難</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id53">共通する原理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_effective_techniques.html#id56">困難が「望ましい」条件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#id59">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_effective_techniques.html#id60">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_myths.html">第 5 章 学習にまつわる誤解</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id2">誤解はなぜ広まるのか</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id4">学習スタイルに合わせた学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id5">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id6">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id8">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id9">流暢性の錯覚</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id10">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id11">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id14">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id15">1 万時間の法則</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id16">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id17">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id21">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id22">右脳と左脳</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id23">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id24">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id26">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id27">ラーニングピラミッド</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id28">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id29">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id32">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id34">マルチタスク</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id35">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id36">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id40">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id41">脳トレーニングで頭が良くなる</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id42">よくある主張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id43">研究が示すこと</a></li>
+<li class="toctree-l3"><a class="reference internal" href="05_myths.html#id45">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id46">誤解の一覧</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id47">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_myths.html#id48">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_understanding_transfer.html">第 6 章 理解と転移</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id2">「覚える」と「理解する」の違い</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id3">理解とは何か</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id5">熟達者と初心者の知識の違い</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id7">説明深度の錯覚</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id9">理解を確かめる方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id10">誤概念とその修正</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id11">誤概念とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id12">プログラミングにおける誤概念の例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id13">概念変化の条件</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id16">類推と抽象化</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id17">類推の力と難しさ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id19">比較による抽象化</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id21">学習の転移</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id22">転移とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id24">遠い転移は起こりにくい</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id27">転移を促す学び方</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id29">例: 新しいプログラミング言語を学ぶ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id30">既知の言語との対比の利点</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_understanding_transfer.html#id31">対比の落とし穴: 負の転移</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id32">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_understanding_transfer.html#id33">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_expertise.html">第 7 章 熟達化と意図的練習</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id2">初心者と熟達者の違い</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id3">パターン認識とチャンク</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id5">長期記憶を使った作業記憶の拡張</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id7">メンタル表象</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id9">ドレイファスモデル</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id10">技能を習得する 5 つの段階</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id12">段階に応じた学び方</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id13">意図的練習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id14">意図的練習とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id18">意図的練習への批判</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id21">独学者にとっての意味</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id22">フィードバック</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id23">フィードバックは常に有効とは限らない</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id25">効果的なフィードバックの条件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id27">独学でフィードバックを得る方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id28">熟達者の盲点</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id29">熟達者には初心者の困難が見えない</a></li>
+<li class="toctree-l3"><a class="reference internal" href="07_expertise.html#id32">教える側・書く側の注意点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id33">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_expertise.html#id34">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">第 8 章 メタ認知と自己調整学習</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">メタ認知とは</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">認知についての認知</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">モニタリングとコントロール</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">自己調整学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">自己調整学習とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">予見段階</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">遂行段階</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">自己省察段階</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">理解度の自己判断のずれ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">学習中の判断は誤りやすい</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">判断の精度を上げる方法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">較正</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id19">較正とは</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">較正を練習する</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">ダニング＝クルーガー効果の正しい理解</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">元の研究</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">よくある誤解</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">統計的な説明をめぐる議論</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">独学者への示唆</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id28">エンジニアの独学への応用</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id29">学習の前後に問いを立てる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id30">予測してから確かめる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">振り返りを記録に残す</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">外部の評価を取り入れる</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id33">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="09_motivation_habits.html">第 9 章 動機づけと習慣</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id2">動機づけとは何か</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id3">自己決定理論</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id5">内発的動機づけと外発的動機づけ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id6">三つの基本的欲求</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id8">期待価値理論と自己効力感</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id9">期待価値理論</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id11">自己効力感</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id13">目標設定理論</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#if-then">実行意図: if-then プランニング</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id19">習慣形成</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id20">習慣とは何か</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id22">習慣になるまでの期間</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id24">習慣を作る工夫</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id25">先延ばしの心理と対策</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id26">先延ばしとは何か</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id28">先延ばしへの対策</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id29">根拠が揺らいでいる知見</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id30">自我消耗</a></li>
+<li class="toctree-l3"><a class="reference internal" href="09_motivation_habits.html#id32">マインドセット</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id36">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_motivation_habits.html#id37">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_sleep_exercise_environment.html">第 10 章 睡眠・運動・環境</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_sleep_exercise_environment.html#id2">睡眠と学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id3">記憶の固定化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id7">睡眠不足の影響</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id9">学習と睡眠の関係を踏まえた工夫</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id11">睡眠についてよく聞く話の扱い</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="10_sleep_exercise_environment.html#id12">運動と学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id13">運動と認知機能の関係</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id16">学習者にとっての運動の意味</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="10_sleep_exercise_environment.html#id17">注意と環境</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id18">作業の切り替えのコスト</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id20">中断の影響</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id22">メディアとの付き合い方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id23">学習環境の整え方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id24">深い集中のための時間のまとまり</a></li>
+<li class="toctree-l3"><a class="reference internal" href="10_sleep_exercise_environment.html#id25">時間管理法について</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="10_sleep_exercise_environment.html#id26">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_sleep_exercise_environment.html#id27">まとめ</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">第 III 部 実践</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="11_learning_technology.html">第 11 章 技術を学ぶ実践</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id2">新しい技術の全体像をつかむ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id3">なぜ全体像が必要か</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id4">全体像をつかむ手順</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id5">例題から自力解決へ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id6">ワークドエグザンプルの効果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id10">フェーディング</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#python">Python による具体例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id12">熟達化反転効果</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id14">写経と改変</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id15">写経の効果と限界</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id16">改変による学習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id17">小さなプロジェクトによる学習</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id18">コードリーディングから学ぶ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id19">デバッグを学びに変える</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id20">高度な技術に取り組む</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id21">前提知識の壁</a></li>
+<li class="toctree-l3"><a class="reference internal" href="11_learning_technology.html#id23">必要な前提知識を見つける</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id24">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_learning_technology.html#id25">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_reading.html">第 12 章 読む技術: ドキュメント・書籍・論文</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id2">目的に応じた読み方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id4">公式ドキュメントの読み方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id5">ドキュメントの種類を知る</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id6">公式ドキュメントを学ぶ手順</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id7">仕様書の読み方</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id8">技術書の読み方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id9">全体像をつかむ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id11">精読する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id13">読んだ後に思い出す</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id15">論文の読み方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id16">3 パス法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id18">論文の内容を確かめる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="12_reading.html#id19">論文の要約を書く</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id20">英語の技術文書を読む</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id21">複数の情報源を比べて読む</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id24">情報源の信頼性を見極める</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id25">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_reading.html#id26">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="13_writing_teaching.html">第 13 章 書くこと・教えることで学ぶ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id2">書くことはなぜ学びになるのか</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id3">生成効果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id4">説明深度の錯覚</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id5">能動的な関与の段階</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id7">自己説明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id8">ファインマンテクニック</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id9">ノートの取り方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id10">コーネル式ノート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id12">ツェッテルカステン</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id14">手書きとタイピング</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id17">技術ブログ・社内文書の執筆による学習</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id18">書く過程で起きること</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id19">熟達者の盲点を意識する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id20">小さく書き始める</a></li>
+<li class="toctree-l3"><a class="reference internal" href="13_writing_teaching.html#id21">学習のための記事の構成</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id22">教えることによる学習効果</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id25">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_writing_teaching.html#id26">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="14_generative_ai.html">第 14 章 生成 AI と学習</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id1">生成 AI が学習にもたらす利点とリスク</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id2">利点</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id3">リスク</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id7">研究の現状</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id8">学習成果への影響</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id12">生産性と学習の区別</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id15">批判的思考への影響</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id18">主な研究のまとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id19">学習を損なわない使い方の原則</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id20">原則 1: 先に自分で考える</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id22">原則 2: 答えではなくヒントを求める</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id23">原則 3: 出力を検証する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id24">原則 4: 自分の言葉で説明し直す</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id25">原則 5: AI なしで再現できるか確かめる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id26">原則 6: 「速くなった」「分かった」という感覚を疑う</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id27">用途別の使い方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id28">解説役として使う</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id29">検索練習の出題役として使う</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id30">ソクラテス式チューターとして使う</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id31">ワークドエグザンプルを生成して自己説明する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id32">コードレビューを依頼する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id33">理解度を確認する</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id34">AI に任せてよい作業と、自分で身に付けるべき力</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="14_generative_ai.html#id35">注意すべきその他の点</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id36">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_generative_ai.html#id37">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="15_planning.html">第 15 章 学習計画の設計と運用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id2">学習計画の全体像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id3">目標からの逆算: 逆向き設計</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id5">目標を決める</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id6">証拠を決める</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id7">学習活動を計画する</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id8">時間の確保と配分</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id9">時間を先に確保する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id10">最小単位を決める</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id11">見積もりに余裕を持たせる</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id12">分散学習と交互学習を計画に組み込む</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id13">新しい内容と復習を組み合わせる</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id15">複数のトピックを交互に学ぶ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id17">学習ログと定期的な振り返り</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id18">学習ログを付ける</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id19">週ごとに振り返る</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id20">挫折時の立て直し</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id21">原因を特定する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id22">計画を小さくして再開する</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#web-3">例: 新しい Web フレームワークを 3 か月で習得する計画</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id23">目標と証拠</a></li>
+<li class="toctree-l3"><a class="reference internal" href="15_planning.html#id24">週ごとの計画</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id25">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_planning.html#id26">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="16_tools.html">第 16 章 学習を支える仕組みとツール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id2">間隔反復とは</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id7">簡易モデルで見る忘却と復習</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id8">ライトナー方式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id10">仕組み</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id11">実装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id12">実行例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#sm-2">SM-2 アルゴリズム</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id14">自己評価</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id15">間隔の計算</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id16">実装</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id17">実行例</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#fsrs">FSRS の概要</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id20">間隔反復ソフトの使い方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id21">理解してからカードにする</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id22">カードの作り方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="16_tools.html#id23">毎日少しずつ続ける</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id24">学習ログの記録と可視化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id25">サンプルコードのダウンロード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id26">エンジニアの独学への応用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_tools.html#id27">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="17_summary.html">第 17 章 まとめ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="17_summary.html#id2">本書の要点</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="17_summary.html#id3">手応えと学習成果は一致しない</a></li>
+<li class="toctree-l3"><a class="reference internal" href="17_summary.html#id4">思い出すことが記憶を作る</a></li>
+<li class="toctree-l3"><a class="reference internal" href="17_summary.html#id5">知識は構造として身に付ける</a></li>
+<li class="toctree-l3"><a class="reference internal" href="17_summary.html#id6">学習は自分で調整する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="17_summary.html#id7">研究知見は根拠の強さを見て使う</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="17_summary.html#id8">独学のチェックリスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_summary.html#id9">さらに学ぶために</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_research.html">付録 A 学習研究の読み方</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id1">研究デザイン</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendix_a_research.html#id2">相関と因果を区別する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appendix_a_research.html#id3">自己報告を過信しない</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id4">効果量</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendix_a_research.html#id7">効果量を読むときの注意</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id9">メタ分析</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id12">再現性の問題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id17">実験室の知見を実務に当てはめる</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id19">研究を確認するためのチェックリスト</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_a_research.html#id20">まとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_examples.html">付録 B サンプルコード一覧</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#id1">実行の準備</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="appendix_b_examples.html#id2">コードの検査</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#forgetting-curve-py">forgetting_curve.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#leitner-box-py">leitner_box.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#sm2-scheduler-py">sm2_scheduler.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#quiz-py">quiz.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#interleave-plan-py">interleave_plan.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appendix_b_examples.html#study-log-py">study_log.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id2">学習科学全般</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id3">独学と自己主導型学習</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id4">記憶と認知の仕組み</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id5">効果的な学習法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id6">学習にまつわる誤解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id7">理解と転移</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id8">熟達化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id9">メタ認知と自己調整学習</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id10">動機づけと習慣</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id11">睡眠・運動・環境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id12">読む・書く・教える</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#ai">生成 AI と学習</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id13">学習計画と間隔反復</a></li>
+<li class="toctree-l2"><a class="reference internal" href="references.html#id14">研究の読み方</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">独学の方法と学習科学</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">第 8 章 メタ認知と自己調整学習</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ch08">
+<span id="id1"></span><h1>第 8 章 メタ認知と自己調整学習<a class="headerlink" href="#ch08" title="Link to this heading"></a></h1>
+<p>学校での学習では、何をいつ学ぶか、どの程度理解できたかを、教師やカリキュラムが決めてくれる。独学では、これらをすべて自分で判断しなければならない。自分の学習を外から眺めて、計画し、進み具合を確かめ、やり方を修正する力が、独学の成否を大きく左右する。本章では、この力の基礎となるメタ認知と、それを学習の流れの中に位置付けた自己調整学習のモデルを紹介する。そのうえで、自分の理解度を正しく判断することの難しさと、その改善方法を扱う。</p>
+<section id="id2">
+<h2>メタ認知とは<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<section id="id3">
+<h3>認知についての認知<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>メタ認知（metacognition）とは、自分の認知（考える、覚える、理解するといった頭の働き）について認知することである。Flavell <a class="reference internal" href="references.html#flavell1979" id="id4"><span>[Flavell1979]</span></a> は、メタ認知を研究の対象として位置付けた初期の研究者の一人であり、メタ認知的知識とメタ認知的経験を区別した。</p>
+<p>メタ認知的知識とは、認知についての知識である。Flavell は、これを次の三つに分けた。</p>
+<ul class="simple">
+<li><p><strong>人についての知識</strong>: 自分や他人の認知の特徴についての知識（「自分は、図があると理解しやすい」「自分は、夜は集中力が落ちる」）。</p></li>
+<li><p><strong>課題についての知識</strong>: 課題の性質が認知に与える影響についての知識（「この仕様書は分量が多く、一度読んだだけでは覚えられない」）。</p></li>
+<li><p><strong>方略についての知識</strong>: どのような方略が、どのような目的に有効かについての知識（「覚えるには、読み返すより思い出す練習のほうが効果的だ」）。</p></li>
+</ul>
+<p>メタ認知的経験とは、認知活動に伴う意識的な体験である。「この説明は分かった気がする」「何かがおかしい気がする」といった感覚がこれにあたる。</p>
+</section>
+<section id="id5">
+<h3>モニタリングとコントロール<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>学習の場面では、メタ認知は二つの働きとして現れる。一つは、自分の学習の状態を監視するモニタリング（「この章はどの程度理解できたか」）である。もう一つは、モニタリングの結果に基づいて学習を調整するコントロール（「理解が不十分なので、もう一度例題を解く」）である。</p>
+<p>この二つは連動しているので、モニタリングが不正確だと、コントロールも誤る。理解できていないのに「分かった」と判断すれば、復習を打ち切ってしまう。逆に、理解できているのに不安を感じ続ければ、同じ内容に必要以上の時間を費やしてしまう。独学で効率よく学ぶには、正確なモニタリングが欠かせない。</p>
+</section>
+</section>
+<section id="id6">
+<h2>自己調整学習<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<section id="id7">
+<h3>自己調整学習とは<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<p>自己調整学習（self-regulated learning）とは、学習者が自ら目標を立て、方略を選び、学習の進み具合を監視し、結果を振り返って次の学習を調整する、という一連の過程を能動的に行う学習である。メタ認知が学習の中で働く場面を、動機づけや行動の調整も含めて捉えた考え方といえる。</p>
+<p>自己調整学習には複数のモデルがあるが、ここでは代表的なものとして Zimmerman <a class="reference internal" href="references.html#zimmerman2002" id="id8"><span>[Zimmerman2002]</span></a> のモデルを紹介する。Zimmerman は、自己調整学習を、予見、遂行、自己省察の三つの段階が循環する過程として説明した（<a class="reference internal" href="#fig-ch08-zimmerman"><span class="std std-numref">図 6</span></a>）。</p>
+<figure class="align-default" id="fig-ch08-zimmerman">
+<div class="graphviz"><object data="_images/graphviz-8e9d39ce637a9ae6f4cb4fcccda86d6aa32a7b6a.svg" type="image/svg+xml" class="graphviz">
+<p class="warning">digraph zimmerman {
+    rankdir=LR;
+    node [shape=box, style=&quot;rounded,filled&quot;, fillcolor=&quot;#e3f2fd&quot;, fontsize=11];
+    edge [color=&quot;#555555&quot;];
+    forethought [label=&quot;予見段階\n・課題の分析（目標設定、計画）\n・動機づけ（自己効力感、興味）&quot;];
+    performance [label=&quot;遂行段階\n・自己制御（方略の実行、注意の集中）\n・自己観察（記録、モニタリング）&quot;];
+    reflection [label=&quot;自己省察段階\n・自己判断（評価、原因の帰属）\n・自己反応（満足感、次への適応）&quot;];
+    forethought -&gt; performance;
+    performance -&gt; reflection;
+    reflection -&gt; forethought [constraint=false, label=&quot;次の学習へ&quot;, fontsize=10];
+}</p></object></div>
+<figcaption>
+<p><span class="caption-number">図 6 </span><span class="caption-text">Zimmerman の自己調整学習のサイクル</span><a class="headerlink" href="#fig-ch08-zimmerman" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id9">
+<h3>予見段階<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>予見段階は、学習に取りかかる前の段階である。この段階では、課題を分析して目標を立て、どのような方略で取り組むかを計画する。また、「自分にはこの課題ができそうだ」という自己効力感や、課題への興味といった動機づけに関する信念も、この段階で学習への取り組み方に影響する。</p>
+<p>例えば、新しいクラウドサービスを学ぶ前に、「今週中に、このサービスで簡単な API を構築してデプロイできるようになる」という目標を立て、「公式チュートリアルを一通り行い、その後、自分で別の API を作る」という計画を立てるのが予見段階にあたる。目標の立て方と動機づけは <a class="reference internal" href="09_motivation_habits.html#ch09"><span class="std std-ref">第 9 章 動機づけと習慣</span></a> で、学習計画の詳細は <a class="reference internal" href="15_planning.html#ch15"><span class="std std-ref">第 15 章 学習計画の設計と運用</span></a> で扱う。</p>
+</section>
+<section id="id10">
+<h3>遂行段階<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>遂行段階は、実際に学習している段階である。この段階には、計画した方略を実行し、注意を課題に集中させる自己制御と、自分の学習の様子を観察し記録する自己観察が含まれる。</p>
+<p>自己観察の典型的な方法は、学習の記録を付けることである。何にどれだけの時間を使ったか、どの問題を解けて、どの問題を解けなかったかを記録すると、後の振り返りの材料になる。学習ログの付け方は <a class="reference internal" href="15_planning.html#ch15"><span class="std std-ref">第 15 章 学習計画の設計と運用</span></a> と <a class="reference internal" href="16_tools.html#ch16"><span class="std std-ref">第 16 章 学習を支える仕組みとツール</span></a> で扱う。</p>
+</section>
+<section id="id11">
+<h3>自己省察段階<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>自己省察段階は、学習の後に結果を振り返る段階である。この段階には、結果を目標と比べて評価し、その原因を考える自己判断と、結果に対する満足感や、次の学習に向けた調整を含む自己反応がある。</p>
+<p>原因の考え方（帰属）は、次の学習に大きく影響する。目標を達成できなかった原因を「自分には才能がない」と考えると、次に取り組む意欲が下がる。一方、「方略が適切でなかった」と考えれば、方略を変えて再挑戦できる。Zimmerman は、方略など自分で変えられる要因に原因を求めることが、次の予見段階での適応的な調整につながるとしている。振り返りの結果は次の予見段階に引き継がれ、サイクルが繰り返される。</p>
+<div class="evidence evidence-moderate admonition">
+<p class="admonition-title">根拠の強さ: 中程度</p>
+<p>目標設定、自己観察、振り返りといった自己調整の要素が学習成果と関係することは、多くの研究で報告されている。ただし、モデルの各段階を個別に訓練した場合の効果は、研究や対象によって異なる。</p>
+</div>
+</section>
+</section>
+<section id="id12">
+<h2>理解度の自己判断のずれ<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<section id="id13">
+<h3>学習中の判断は誤りやすい<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>自己調整学習のサイクルを適切に回すには、自分の理解度を正しく判断する必要がある。しかし、学習者の判断は系統的に偏ることが分かっている。</p>
+<p>Koriat と Bjork <a class="reference internal" href="references.html#koriat2005" id="id14"><span>[Koriat2005]</span></a> は、単語の対を覚える課題で、学習者が自分の記憶の程度を過大評価する現象を調べた。学習中は、手がかりの単語と答えの単語を同時に見ているため、両者のつながりが実際以上に強く感じられる。しかし、テストでは手がかりだけが示され、答えを自分で思い出さなければならない。学習時には答えが目の前にあるという状況の違いを考慮しないため、学習者は「テストでも思い出せるだろう」と過大に判断してしまう。</p>
+<p>これは、技術の学習で頻繁に起こる。解説付きのコードを読んでいるときは、すべての行が理解できたように感じる。しかし、解説を閉じて同じコードを書こうとすると、書けない。答えが見えている状態での「分かる」と、何も見ずに「できる」の違いを、学習者は見落としやすい。</p>
+<p>Bjork ら <a class="reference internal" href="references.html#bjork2013" id="id15"><span>[Bjork2013]</span></a> は、学習者が自分の学習について持っている信念と、実際の学習の仕組みとのずれを広く検討した。学習者は、学習中の手応えや、教材が読みやすいと感じること（流暢性）を手がかりに理解度を判断しやすいが、これらの手がかりは長期的な学習成果を必ずしも反映しない（<a class="reference internal" href="05_myths.html#ch05"><span class="std std-ref">第 5 章 学習にまつわる誤解</span></a>）。その結果、学習者は、読み返しのように手応えのある方法を好み、検索練習や分散学習のように手応えが少ないが効果の高い方法を避ける傾向がある（<a class="reference internal" href="04_effective_techniques.html#ch04"><span class="std std-ref">第 4 章 効果が確かめられた学習法</span></a>）。</p>
+<div class="evidence evidence-strong admonition">
+<p class="admonition-title">根拠の強さ: 強い</p>
+<p>学習中の理解度の判断が、流暢性などの手がかりに影響されて系統的に偏ることは、多くの実験で確認されている。</p>
+</div>
+</section>
+<section id="id16">
+<h3>判断の精度を上げる方法<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p>研究から、理解度の判断の精度を上げる方法として、次のようなものが知られている。</p>
+<ul class="simple">
+<li><p><strong>答えを見ずに判断する</strong>: 判断の前に、答えを隠して実際に思い出せるか試す。思い出そうとした結果に基づいて判断すると、精度が上がる。</p></li>
+<li><p><strong>時間をおいてから判断する</strong>: 学習の直後ではなく、時間をおいてから判断する。直後は情報が作業記憶に残っているので、思い出せるのは当然である。時間をおいて思い出せるかどうかのほうが、長期的な記憶をよく反映する。Nelson と Dunlosky <a class="reference internal" href="references.html#nelson1991" id="id17"><span>[Nelson1991]</span></a> は、学習直後の判断より、時間をおいてからの判断のほうが、後のテストの成績をはるかに正確に予測することを示した。</p></li>
+<li><p><strong>説明を試みる</strong>: 「理解した」と感じたら、何も見ずに説明してみる。説明に詰まる箇所は、理解が不十分な箇所である（<a class="reference internal" href="06_understanding_transfer.html#ch06"><span class="std std-ref">第 6 章 理解と転移</span></a> の説明深度の錯覚）。</p></li>
+<li><p><strong>実際に使ってみる</strong>: 知識を使う課題（コードを書く、問題を解く）に取り組み、その結果で判断する。</p></li>
+</ul>
+<p>これらに共通するのは、「感じ」ではなく「行動の結果」で判断することである。</p>
+</section>
+</section>
+<section id="id18">
+<h2>較正<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<section id="id19">
+<h3>較正とは<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<p>自分の判断と実際の成績がどの程度一致しているかを、較正（calibration）と呼ぶ。よく較正された学習者は、「80% くらい理解できた」と判断したとき、実際にテストで 80% 前後の成績を取る。</p>
+<p>較正のずれは、判断した自信の平均と実際の正答率の平均の差で簡単に表せる。<span class="math notranslate nohighlight">\(n\)</span> 問の問題について、問題 <span class="math notranslate nohighlight">\(i\)</span> に対する自信（正解できる確率の見積もり）を <span class="math notranslate nohighlight">\(c_i\)</span>、実際の結果（正解なら 1、不正解なら 0）を <span class="math notranslate nohighlight">\(a_i\)</span> とすると、ずれ（バイアス）は次の式で表される。</p>
+<div class="math notranslate nohighlight">
+\[\text{バイアス} = \frac{1}{n} \sum_{i=1}^{n} c_i - \frac{1}{n} \sum_{i=1}^{n} a_i\]</div>
+<p>バイアスが正なら自信過剰、負なら自信不足である。例えば、10 問の小テストで、各問題に平均 0.8 の自信を持っていたのに、実際には 6 問しか正解できなかった場合、バイアスは <span class="math notranslate nohighlight">\(0.8 - 0.6 = 0.2\)</span> となり、自信過剰である。</p>
+</section>
+<section id="id20">
+<h3>較正を練習する<a class="headerlink" href="#id20" title="Link to this heading"></a></h3>
+<p>較正は練習によって改善できる。最も簡単な方法は、小テストを解く前に、各問題に正解できる自信を記録しておき、採点後に自信と結果を比べることである。これを繰り返すと、どのような場合に自分の判断が外れやすいかが分かってくる。</p>
+<p>エンジニアの仕事にも、較正の練習になる場面は多い。作業時間の見積もりは、その典型である。見積もった時間と実際にかかった時間を記録して比べると、自分の見積もりがどの程度楽観的かが分かる。コードを実行する前に「このテストは通るはずだ」と予測し、結果と比べるのも、理解度の較正の練習になる。</p>
+<div class="evidence evidence-moderate admonition">
+<p class="admonition-title">根拠の強さ: 中程度</p>
+<p>判断と結果を比べるフィードバックによって較正が改善することは、複数の研究で報告されている。ただし、改善の程度は課題の種類によって異なり、改善が他の課題に広がるかについては研究が限られる。</p>
+</div>
+</section>
+</section>
+<section id="id21">
+<h2>ダニング＝クルーガー効果の正しい理解<a class="headerlink" href="#id21" title="Link to this heading"></a></h2>
+<section id="id22">
+<h3>元の研究<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>自己評価の偏りに関する研究として最もよく知られているのが、Kruger と Dunning <a class="reference internal" href="references.html#kruger1999" id="id23"><span>[Kruger1999]</span></a> の研究である。Kruger と Dunning は、ユーモアの理解、論理的推論、英文法などの課題で、参加者の実際の成績と、自分の成績が参加者全体の中でどのあたりかという自己評価を比べた。その結果、成績が下位 4 分の 1 の参加者は、実際には下位に位置しているにもかかわらず、自分の順位を平均より上と見積もっていた。一方、成績が上位の参加者は、自分の順位をやや低めに見積もる傾向があった。</p>
+<p>Kruger と Dunning は、この結果を、能力の低い人は、自分の誤りに気付くために必要な能力そのものも欠いているため、自分の能力を過大評価する、と解釈した。この現象は、ダニング＝クルーガー効果と呼ばれるようになった。</p>
+</section>
+<section id="id24">
+<h3>よくある誤解<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>ダニング＝クルーガー効果は、一般向けの解説で大きく誇張されて広まっている。よく見かけるのは、「知識が少し付いたときに自信が最も高くなり（いわゆる『馬鹿の山』）、学ぶにつれて自信が急落し、その後ゆっくり回復する」という曲線の図である。しかし、この図は元の研究のデータを示したものではない。</p>
+<p>元の研究で示されたのは、成績の低い人の自己評価が実際より高く、成績の高い人の自己評価が実際よりやや低い、ということである。成績の低い人の自己評価が、成績の高い人の自己評価を上回っていたわけではない。成績の低い人ほど自信満々である、という理解は正しくない。</p>
+</section>
+<section id="id25">
+<h3>統計的な説明をめぐる議論<a class="headerlink" href="#id25" title="Link to this heading"></a></h3>
+<p>さらに、元の研究の結果の一部は、統計的な現象で説明できるという指摘がある。一つは、平均への回帰である。テストの成績には測定の誤差が含まれるので、成績で下位に分類された人の中には、たまたま実力より低い点を取った人が多く含まれる。このような人の自己評価は、テストの成績よりも高くなりやすい。もう一つは、多くの人が自分を平均より上だと考える一般的な傾向（平均以上効果）である。これらを組み合わせると、自己評価の能力に差がなくても、元の研究と似たパターンが現れうる。</p>
+<p>Jansen ら <a class="reference internal" href="references.html#jansen2021" id="id26"><span>[Jansen2021]</span></a> は、この問題を検討するため、大規模なデータに基づいて、統計的な要因と、自己評価の能力そのものの差を区別できるモデルを作った。その結果、観察されたパターンの一部は、測定の誤差と平均以上効果で説明できるものの、それだけでは説明しきれず、成績の低い人は、自分の成績についての手がかり（どの問題を正解したか）に対する感度が低いことも示唆された。つまり、成績の低い人の自己評価が不正確になる傾向は、統計的な見かけだけではない可能性がある。</p>
+<div class="evidence evidence-debated admonition">
+<p class="admonition-title">根拠の強さ: 議論あり</p>
+<p>成績の低い人が自分の順位を過大に見積もるというパターン自体は繰り返し観察されている。一方、そのうちどの程度が自己評価の能力の差によるもので、どの程度が統計的な要因によるものかについては議論が続いている。「知識が少ない人ほど自信が高い」という一般向けの説明は、元の研究の結果を誇張したものである。</p>
+</div>
+</section>
+<section id="id27">
+<h3>独学者への示唆<a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
+<p>ダニング＝クルーガー効果をめぐる議論から、独学者が引き出せる示唆は、他人を評価するための道具ではなく、自分の自己評価を疑うための材料として使うべきだ、ということである。新しい技術を学び始めたばかりのときは、その分野で何が難しいのかを知らないので、自分の到達度を正しく判断する手がかりそのものが少ない。</p>
+<p>自分の判断の精度に頼らず、外部の基準で確かめる仕組みを持つとよい。資格試験の模擬問題、オンラインジャッジ、コードレビュー、その分野の熟達者との会話など、自分の判断とは独立した評価を定期的に受けることで、自己評価のずれに気付ける。</p>
+</section>
+</section>
+<section id="id28">
+<h2>エンジニアの独学への応用<a class="headerlink" href="#id28" title="Link to this heading"></a></h2>
+<p>本章の内容を、独学の実践に当てはめる方法をまとめる。</p>
+<section id="id29">
+<h3>学習の前後に問いを立てる<a class="headerlink" href="#id29" title="Link to this heading"></a></h3>
+<p>自己調整学習のサイクルを回すには、各段階で決まった問いを自分に投げかけるのが手軽である。<a class="reference internal" href="#tbl-ch08-questions"><span class="std std-numref">表 11</span></a> に、段階ごとの問いの例を示す。</p>
+<table class="docutils align-default" id="tbl-ch08-questions">
+<caption><span class="caption-number">表 11 </span><span class="caption-text">自己調整学習の各段階で投げかける問いの例</span><a class="headerlink" href="#tbl-ch08-questions" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>段階</p></th>
+<th class="head"><p>問いの例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>予見（学習前）</p></td>
+<td><p>今日の学習が終わったとき、何ができるようになっていればよいか。そのために、どの教材を使い、どの方法で学ぶか。どこでつまずきそうか。</p></td>
+</tr>
+<tr class="row-odd"><td><p>遂行（学習中）</p></td>
+<td><p>今の方法で理解が進んでいるか。読んでいるだけになっていないか。集中が切れていないか。</p></td>
+</tr>
+<tr class="row-even"><td><p>自己省察（学習後）</p></td>
+<td><p>何も見ずに、今日学んだことを説明できるか。目標は達成できたか。できなかったとすれば、何が原因か。次回は何を変えるか。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id30">
+<h3>予測してから確かめる<a class="headerlink" href="#id30" title="Link to this heading"></a></h3>
+<p>理解度の判断を「感じ」から「結果」に切り替えるには、予測と確認を習慣にするのがよい。コードを実行する前に結果を予測する、小テストの前に正答数を予測する、作業の前に所要時間を予測する。予測と結果のずれを記録していくと、自分の判断の癖が見えてくる。<a class="reference internal" href="appendix_b_examples.html#appendix-b"><span class="std std-ref">付録 B サンプルコード一覧</span></a> の検索練習用の小テスト（<code class="docutils literal notranslate"><span class="pre">quiz.py</span></code>）を使うときも、各問題の前に「思い出せる自信」を記録しておくと、較正の練習を兼ねられる。</p>
+</section>
+<section id="id31">
+<h3>振り返りを記録に残す<a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
+<p>振り返りは、頭の中で行うだけでは流れてしまう。学習の終わりに数分間、学んだこと、分からなかったこと、次回変えることを、学習ログに書き残す。週に一度は、1 週間分のログを読み返して、目標の進み具合と方法の妥当性を見直す。振り返りの具体的な方法は <a class="reference internal" href="15_planning.html#ch15"><span class="std std-ref">第 15 章 学習計画の設計と運用</span></a> で扱う。</p>
+</section>
+<section id="id32">
+<h3>外部の評価を取り入れる<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
+<p>独学の大きな弱点の一つは、自分の判断だけで学習を進めてしまうことである。テスト、レビュー、模擬試験など、自分の判断とは独立した評価を学習計画の中に組み込む。他人からの評価は、自己評価のずれを修正する最も確実な手段である。</p>
+</section>
+</section>
+<section id="id33">
+<h2>まとめ<a class="headerlink" href="#id33" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>メタ認知とは、自分の認知についての認知であり、学習の状態を監視するモニタリングと、それに基づいて学習を調整するコントロールからなる。</p></li>
+<li><p>Zimmerman の自己調整学習のモデルでは、予見、遂行、自己省察の三つの段階が循環する。振り返りで原因を方略に求めると、次の学習を調整しやすい。</p></li>
+<li><p>学習中の理解度の判断は、答えが見えている状況や流暢性に影響されて系統的に偏る。判断は、答えを見ずに、時間をおいて、行動の結果に基づいて行う。</p></li>
+<li><p>判断と結果のずれ（較正）は、予測と確認を繰り返すことで改善できる。</p></li>
+<li><p>ダニング＝クルーガー効果は一般向けに誇張されて広まっている。元の研究の結果の一部には統計的な説明があり、議論が続いている。</p></li>
+<li><p>自己評価を過信せず、テストやレビューなどの外部の評価を学習に組み込む。</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="07_expertise.html" class="btn btn-neutral float-left" title="第 7 章 熟達化と意図的練習" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="09_motivation_habits.html" class="btn btn-neutral float-right" title="第 9 章 動機づけと習慣" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
