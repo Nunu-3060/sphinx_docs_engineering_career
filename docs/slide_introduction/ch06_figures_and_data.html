@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. 図表とデータの見せ方 &mdash; スライド作成・プレゼンテーション入門 1.0 ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4806b36b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=19757887"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="7. ツール別の作り方" href="ch07_tools.html" />
+    <link rel="prev" title="5. スライドデザインの基礎" href="ch05_design.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            スライド作成・プレゼンテーション入門
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ch01_introduction.html">1. はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch02_what_is_presentation.html">2. プレゼンテーションとは</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch03_goal_and_audience.html">3. 目的と聞き手を決める</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch04_story.html">4. ストーリーを組み立てる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch05_design.html">5. スライドデザインの基礎</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. 図表とデータの見せ方</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">6.1. 箇条書きを図解に変える</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">6.2. グラフの見せ方</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">6.2.1. グラフを選ぶ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">6.2.2. 伝えたい点を強調する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">6.2.3. グラフで誤解を招かない</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">6.3. 表の見せ方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">6.4. 画像・アイコン・スクリーンショット</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">6.5. エンジニアの発表に特有の要素</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id10">6.5.1. コード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">6.5.2. アーキテクチャ図</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">6.5.3. 数式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">6.5.4. ターミナルの出力とログ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">6.6. アニメーションと画面切り替え</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">6.7. この章のまとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch07_tools.html">7. ツール別の作り方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch08_rehearsal.html">8. 発表の準備とリハーサル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch09_delivery.html">9. 話し方と振る舞い</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch10_qa.html">10. 質疑応答</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch11_online.html">11. オンライン・ハイブリッド発表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch12_review.html">12. レビューと改善</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch13_summary.html">13. まとめ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_checklist.html">付録 A チェックリスト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_templates.html">付録 B 構成テンプレート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_c_samples.html">付録 C サンプル一覧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">スライド作成・プレゼンテーション入門</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">6. </span>図表とデータの見せ方</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">6. </span>図表とデータの見せ方<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>2 章で述べたとおり、スライドに載せる価値が高いのは、話だけでは伝わりにくいもの、つまり図、グラフ、表、数字である。この章では、箇条書きを図解に変える方法、グラフと表の見せ方、画像の扱い、そしてエンジニアの発表に特有のコードやアーキテクチャ図の見せ方を説明する。</p>
+<section id="id2">
+<h2><span class="section-number">6.1. </span>箇条書きを図解に変える<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>箇条書きは手軽だが、項目どうしの関係（順序、因果、対立、包含）を表せない。すべての項目が同じ形で並ぶので、聞き手は関係を自分で読み解かなければならない。項目の間に関係があるなら、その関係を図で示す。</p>
+<figure class="align-center" id="id16">
+<img alt="リリースの流れを箇条書きで書いたスライドと、フロー図にしたスライドの比較" src="_images/ch06_bullets_to_diagram.png" />
+<figcaption>
+<p><span class="caption-number">図 6.1 </span><span class="caption-text">箇条書きをフロー図に変える</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>左のスライドは、手順を正しく並べているが、テストに失敗したときに戻る流れが字下げでしか表現されていない。右のスライドは、流れを矢印で示し、失敗したときに戻る経路を別の色の矢印で描いている。タイトルも、図から読み取ってほしいメッセージ（テストに通らない変更は本番に届かない）にした。</p>
+<p>図解にはいくつかの基本の型がある。項目の関係に合った型を選ぶ。</p>
+<figure class="align-center" id="id17">
+<img alt="フロー、比較、階層、マトリクス、サイクル、構成要素の 6 つの図解の型" src="_images/ch06_diagram_patterns.png" />
+<figcaption>
+<p><span class="caption-number">図 6.2 </span><span class="caption-text">図解の基本の型</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<table class="docutils align-default" id="id18">
+<caption><span class="caption-number">表 6.1 </span><span class="caption-text">図解の型と使いどころ</span><a class="headerlink" href="#id18" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 18.0%" />
+<col style="width: 37.0%" />
+<col style="width: 45.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>型</p></th>
+<th class="head"><p>表す関係</p></th>
+<th class="head"><p>エンジニアの資料での例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>フロー</p></td>
+<td><p>順序、手順、処理の流れ</p></td>
+<td><p>リリースの手順、データの処理の流れ、障害の時系列</p></td>
+</tr>
+<tr class="row-odd"><td><p>比較</p></td>
+<td><p>2 つ以上の選択肢の違い</p></td>
+<td><p>技術選定、移行前後の比較、案 A と案 B</p></td>
+</tr>
+<tr class="row-even"><td><p>階層</p></td>
+<td><p>全体と部分、親と子</p></td>
+<td><p>組織、モジュールの構成、課題の分解</p></td>
+</tr>
+<tr class="row-odd"><td><p>マトリクス</p></td>
+<td><p>2 つの軸による分類</p></td>
+<td><p>効果と費用による施策の優先順位、影響度と発生確率によるリスクの評価</p></td>
+</tr>
+<tr class="row-even"><td><p>サイクル</p></td>
+<td><p>繰り返す流れ</p></td>
+<td><p>開発のイテレーション、PDCA、監視と改善の循環</p></td>
+</tr>
+<tr class="row-odd"><td><p>構成要素</p></td>
+<td><p>要素とその間のつながり</p></td>
+<td><p>システム構成図、サービス間の依存関係</p></td>
+</tr>
+</tbody>
+</table>
+<p>図解を作るときは、次の点に気を付ける。</p>
+<ul class="simple">
+<li><p>図の要素の数は少なくする。1 枚の図に 7 つ以上の箱が並ぶ場合は、まとめられないか、2 枚に分けられないかを考える。</p></li>
+<li><p>矢印の意味（データの流れか、処理の順序か、依存関係か）を 1 枚の図の中で混ぜない。</p></li>
+<li><p>図の中の文字も、5 章の文字の大きさの目安を守る。図を縮小して貼り付けると、文字が小さくなりやすい。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2><span class="section-number">6.2. </span>グラフの見せ方<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3><span class="section-number">6.2.1. </span>グラフを選ぶ<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>グラフの種類は、データで何を伝えたいかによって選ぶ。</p>
+<table class="docutils align-default" id="id19">
+<caption><span class="caption-number">表 6.2 </span><span class="caption-text">伝えたいこととグラフの種類</span><a class="headerlink" href="#id19" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 30.0%" />
+<col style="width: 35.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>伝えたいこと</p></th>
+<th class="head"><p>グラフ</p></th>
+<th class="head"><p>注意点</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>項目どうしの大きさの比較</p></td>
+<td><p>棒グラフ</p></td>
+<td><p>縦軸は 0 から始める。項目が多いときや項目名が長いときは横棒にする</p></td>
+</tr>
+<tr class="row-odd"><td><p>時間による変化</p></td>
+<td><p>折れ線グラフ</p></td>
+<td><p>系列は 3〜4 本までにする。強調する系列以外は薄い色にする</p></td>
+</tr>
+<tr class="row-even"><td><p>2 つの量の関係</p></td>
+<td><p>散布図</p></td>
+<td><p>相関があっても因果関係があるとは限らないことに注意する</p></td>
+</tr>
+<tr class="row-odd"><td><p>全体に占める割合</p></td>
+<td><p>積み上げ棒グラフ、円グラフ</p></td>
+<td><p>円グラフは項目が少なく、差が大きいときだけ使う</p></td>
+</tr>
+<tr class="row-even"><td><p>分布</p></td>
+<td><p>ヒストグラム、箱ひげ図</p></td>
+<td><p>応答時間のように偏った分布では、平均値だけでなくパーセンタイル値も示す</p></td>
+</tr>
+</tbody>
+</table>
+<p>円グラフは注意して使う。人は角度や面積の違いを、長さの違いほど正確には読み取れない。次の図の左の円グラフでは、Web、iOS、Android、API のどれが大きいかを読み取るのは難しいが、右の棒グラフなら順位も差もすぐに分かる。</p>
+<figure class="align-center" id="id20">
+<img alt="6 項目の割合を円グラフで表した図と、並べ替えた横棒グラフで表した図の比較" src="_images/ch06_pie_vs_bar.png" />
+<figcaption>
+<p><span class="caption-number">図 6.3 </span><span class="caption-text">円グラフと棒グラフの比較</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id5">
+<h3><span class="section-number">6.2.2. </span>伝えたい点を強調する<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>スライドに載せるグラフは、データを正確に示すだけでなく、聞き手に見てほしい点がすぐに分かるようにする。分析のために作ったグラフをそのまま貼ると、多くの場合、情報が多すぎる。</p>
+<figure class="align-center" id="id21">
+<img alt="色分けと凡例と格子線のある棒グラフと、1 本だけを強調した棒グラフの比較" src="_images/ch06_chart_before_after.png" />
+<figcaption>
+<p><span class="caption-number">図 6.4 </span><span class="caption-text">グラフの改善前と改善後</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>上の図の改善後のグラフでは、次のように変更している。</p>
+<ul class="simple">
+<li><p>タイトルを、グラフから読み取ってほしいメッセージ（D チームの障害は他チームの約 2 倍）にした。</p></li>
+<li><p>棒の色を 1 色の灰色にそろえ、注目してほしい棒だけをアクセントカラーにした。色分けに意味がないなら、色は使わない。</p></li>
+<li><p>凡例をなくし、項目名を軸に直接書いた。凡例とグラフの間で視線を往復させずに済む。</p></li>
+<li><p>格子線と縦軸の目盛りをなくし、棒の上に値を直接書いた。値を読むためだけの要素は不要になる。</p></li>
+</ul>
+<p>matplotlib などで作ったグラフをスライドに貼る場合は、スライド用に作り直すことを勧める。分析用のグラフは文字が小さく、スライドに貼ると読めない。図の大きさを、スライド上に表示する大きさに合わせて指定し、文字を大きくして出力するとよい。</p>
+</section>
+<section id="id6">
+<h3><span class="section-number">6.2.3. </span>グラフで誤解を招かない<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>グラフは、意図せずに誤解を招くことがある。次の点に注意する。</p>
+<ul class="simple">
+<li><p>棒グラフの縦軸を 0 以外から始めると、差が実際よりも大きく見える。差を拡大して見せたい場合は、折れ線グラフにするか、軸が 0 から始まっていないことを明示する。</p></li>
+<li><p>3D のグラフは、奥行きのために値が読み取りにくくなり、手前の要素が大きく見える。スライドでは使わない。</p></li>
+<li><p>比較する 2 つのグラフは、軸の範囲をそろえる。</p></li>
+<li><p>出典と、データの期間・条件を小さく添える。</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2><span class="section-number">6.3. </span>表の見せ方<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>表は、正確な数値を示したいときや、複数の項目を複数の観点で比較したいときに向いている。ただし、表は読むのに時間がかかるので、スライドでは次のように絞る。</p>
+<ul class="simple">
+<li><p><strong>行と列を減らす</strong>: 伝えたいメッセージに必要な行と列だけを残す。全データは付録や配布資料に回す。</p></li>
+<li><p><strong>注目してほしい箇所を強調する</strong>: 結論に関わる数値を、太字やアクセントカラーにする。比較する数値が離れている場合は、列の並びを変えて隣に並べる。</p></li>
+<li><p><strong>数値は右揃えにし、桁と単位をそろえる</strong>: 小数点以下の桁数をそろえると、大きさを比べやすい。単位は見出しに書き、セルには数値だけを書く。</p></li>
+<li><p><strong>罫線を減らす</strong>: 縦の罫線はなくても読める。行を区別するには、1 行おきに薄い背景色を付ける方法もある。</p></li>
+</ul>
+<p>表の例は、7 章で紹介する Marp のサンプル（進捗報告の「依頼」のスライド）にある。</p>
+</section>
+<section id="id8">
+<h2><span class="section-number">6.4. </span>画像・アイコン・スクリーンショット<a class="headerlink" href="#id8" title="Link to this heading"></a></h2>
+<p>写真やアイコンは、内容の理解を助ける場合にだけ使う。スライドの空いた場所を埋めるための飾りの画像は、聞き手の注意をメッセージからそらす。</p>
+<p>画像を使う場合は、権利を確認する。</p>
+<ul class="simple">
+<li><p>Web で見つけた画像を、許可なくスライドに使ってはならない。社内の発表であっても、著作権の問題は生じうる。</p></li>
+<li><p>素材サイトやアイコン集の画像は、利用規約（商用利用の可否、クレジットの表記が必要か、改変してよいか）を確認する。</p></li>
+<li><p>他の人が作った図やグラフを引用する場合は、出典を明記する。</p></li>
+<li><p>製品やサービスのロゴは、各社のガイドラインに従って使う。</p></li>
+</ul>
+<p>自社のシステムや社内ツールのスクリーンショットを使う場合は、次の点に注意する。</p>
+<ul class="simple">
+<li><p>個人情報、顧客の情報、パスワード、API キー、社内のサーバー名などが写り込んでいないか確認する。社外で発表する場合は特に注意する。</p></li>
+<li><p>画面全体ではなく、説明に必要な部分だけを切り抜く。注目してほしい箇所を枠で囲むか、それ以外の部分を暗くする。</p></li>
+<li><p>画面の文字が小さすぎる場合は、ブラウザやアプリを拡大表示してから撮影する。</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2><span class="section-number">6.5. </span>エンジニアの発表に特有の要素<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="id10">
+<h3><span class="section-number">6.5.1. </span>コード<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>技術発表ではコードを見せたくなるが、スライドに載せたコードは、聞き手にとっては読むのに時間のかかる文章である。コードを見せるときは、次のようにする。</p>
+<ul class="simple">
+<li><p><strong>量を絞る</strong>: 説明に必要な数行だけを載せる。import 文、エラー処理、ログ出力などの本質でない部分は省く。省いたことは <code class="docutils literal notranslate"><span class="pre">...</span></code> などで示す。目安として、1 枚に 10 行程度までにする。</p></li>
+<li><p><strong>文字を大きくする</strong>: 等幅フォントで、18 pt 以上にする。小さくしないと入らない量のコードは、載せる量を減らす。</p></li>
+<li><p><strong>注目してほしい行を強調する</strong>: 背景色を変える、その行以外を薄くする、などの方法で、どこを見ればよいかを示す。</p></li>
+<li><p><strong>タイトルでコードの意味を言う</strong>: 「コード」「実装」ではなく、そのコードで何をしているか、なぜそうしたかをタイトルに書く。</p></li>
+</ul>
+<figure class="align-center" id="id22">
+<img alt="関数全体の小さなコードを載せたスライドと、要点の 3 行を大きく載せて 1 行を強調したスライドの比較" src="_images/ch06_code_slide.png" />
+<figcaption>
+<p><span class="caption-number">図 6.5 </span><span class="caption-text">コードのスライドの改善前と改善後</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>コードの全体は、リポジトリへのリンクや付録で示せばよい。発表後に資料を共有する場合は、コードをコピーできるよう、画像ではなくテキストで載せておくと親切である。Marp では、Markdown のコードブロックがそのままテキストとして出力され、構文の色分けも自動で行われる。</p>
+</section>
+<section id="id11">
+<h3><span class="section-number">6.5.2. </span>アーキテクチャ図<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>システムの構成を説明する場合は、設計書の構成図をそのまま使わず、発表のメッセージに必要な要素だけを残した図を作る。</p>
+<ul class="simple">
+<li><p>説明に関係しないコンポーネントは省くか、1 つの箱にまとめる。</p></li>
+<li><p>今回の変更箇所や、問題が起きた箇所をアクセントカラーで示す。</p></li>
+<li><p>変更の前後を比べる場合は、同じ配置の図を 2 枚並べるか、続けて表示する。要素の位置が変わると、聞き手は何が変わったのかを見つけにくい。</p></li>
+<li><p>AWS などのクラウドサービスの公式アイコンを使う場合は、提供元のガイドラインに従う。アイコンに頼りすぎず、名前も書き添える。</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3><span class="section-number">6.5.3. </span>数式<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>数式は、その場で読み解いてもらうのが難しい要素である。スライドに数式を載せる場合は、式の意味を言葉で添え、記号の意味を説明する。聞き手が数式に慣れていない場合は、式の代わりに具体的な数値の例や図で説明できないかを考える。Marp では、<code class="docutils literal notranslate"><span class="pre">$...$</span></code> と <code class="docutils literal notranslate"><span class="pre">$$...$$</span></code> で囲んで TeX の記法で数式を書ける。</p>
+</section>
+<section id="id13">
+<h3><span class="section-number">6.5.4. </span>ターミナルの出力とログ<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>コマンドの実行結果やログを見せる場合は、必要な行だけを抜き出す。ターミナルのスクリーンショットは、背景が黒く文字が小さいことが多く、投影すると読みにくい。テキストとして貼り付け、文字を大きくして、注目してほしい行を強調する。</p>
+</section>
+</section>
+<section id="id14">
+<h2><span class="section-number">6.6. </span>アニメーションと画面切り替え<a class="headerlink" href="#id14" title="Link to this heading"></a></h2>
+<p>アニメーション（スライド上の要素を順に表示する効果など）と、画面切り替え（スライドが変わるときの効果）は、控えめに使う。</p>
+<p>効果的な使い方は、要素を話の順に 1 つずつ表示することである。複雑な図や箇条書きをいきなり全部見せると、聞き手は発表者の話より先に全体を読もうとする。話に合わせて順に表示すれば、聞き手の視線を、いま話している箇所に誘導できる。</p>
+<p>一方で、次のような使い方は避ける。</p>
+<ul class="simple">
+<li><p>回転する、跳ねる、飛び込んでくるなど、動きの大きい効果。内容と関係のない動きは、聞き手の注意をそらす。</p></li>
+<li><p>すべてのスライドに異なる画面切り替えの効果を付けること。反復の原則に反する。</p></li>
+<li><p>操作が複雑になるほど多くのアニメーションを付けること。発表中にクリックの回数を間違えやすくなる。</p></li>
+</ul>
+<p>アニメーションを使ったスライドは、PDF に変換すると最終的な状態だけが残る。配布用の資料を PDF で作る場合は、PDF でも内容が伝わるかを確認する。</p>
+</section>
+<section id="id15">
+<h2><span class="section-number">6.7. </span>この章のまとめ<a class="headerlink" href="#id15" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>項目の間に関係があるなら、箇条書きではなく図解で関係を示す。図解にはフロー、比較、階層、マトリクス、サイクル、構成要素などの型がある。</p></li>
+<li><p>グラフは伝えたいことに合わせて選び、伝えたい点を強調し、不要な要素を減らす。</p></li>
+<li><p>表は行と列を絞り、注目してほしい数値を強調する。</p></li>
+<li><p>画像は理解を助ける場合にだけ使い、権利と写り込みを確認する。</p></li>
+<li><p>コードは量を絞り、文字を大きくし、注目してほしい行を強調する。</p></li>
+<li><p>アニメーションは、話の順に要素を表示して視線を誘導する目的で、控えめに使う。</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ch05_design.html" class="btn btn-neutral float-left" title="5. スライドデザインの基礎" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ch07_tools.html" class="btn btn-neutral float-right" title="7. ツール別の作り方" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

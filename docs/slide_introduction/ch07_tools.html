@@ -1,0 +1,671 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7. ツール別の作り方 &mdash; スライド作成・プレゼンテーション入門 1.0 ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=4806b36b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=19757887"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="8. 発表の準備とリハーサル" href="ch08_rehearsal.html" />
+    <link rel="prev" title="6. 図表とデータの見せ方" href="ch06_figures_and_data.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            スライド作成・プレゼンテーション入門
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ch01_introduction.html">1. はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch02_what_is_presentation.html">2. プレゼンテーションとは</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch03_goal_and_audience.html">3. 目的と聞き手を決める</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch04_story.html">4. ストーリーを組み立てる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch05_design.html">5. スライドデザインの基礎</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch06_figures_and_data.html">6. 図表とデータの見せ方</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. ツール別の作り方</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">7.1. ツールの比較</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#powerpoint">7.2. PowerPoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">7.2.1. スライドマスターとレイアウト</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">7.2.2. 配置と整列</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">7.2.3. アウトライン表示</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">7.2.4. 発表者ツール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">7.2.5. その他の機能</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#google">7.3. Google スライド</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">7.3.1. テーマ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">7.3.2. 配置と整列</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">7.3.3. 共同編集とコメント</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">7.3.4. 発表</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#marp">7.4. Marp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">7.4.1. 導入</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">7.4.2. 基本の書き方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">7.4.3. ディレクティブ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">7.4.4. 画像</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#css">7.4.5. テーマ CSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">7.4.6. 出力形式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git">7.4.7. Git での管理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">7.4.8. サンプルスライド</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">7.5. PowerPoint ファイルの自動生成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">7.6. ツールの選び方</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">7.7. この章のまとめ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ch08_rehearsal.html">8. 発表の準備とリハーサル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch09_delivery.html">9. 話し方と振る舞い</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch10_qa.html">10. 質疑応答</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch11_online.html">11. オンライン・ハイブリッド発表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch12_review.html">12. レビューと改善</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ch13_summary.html">13. まとめ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="appendix_a_checklist.html">付録 A チェックリスト</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_b_templates.html">付録 B 構成テンプレート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_c_samples.html">付録 C サンプル一覧</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">スライド作成・プレゼンテーション入門</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>ツール別の作り方</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">7. </span>ツール別の作り方<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>この章では、スライドを作るツールとして PowerPoint、Google スライド、Marp を取り上げ、5 章と 6 章で説明した原則を実際に適用するための機能を説明する。最後に、Python で PowerPoint のファイルを自動生成する方法を簡単に紹介する。</p>
+<p>ツールの画面やメニューの名前は、バージョンの更新によって変わることがある。本章の記述は 2026 年 11 月時点のものである。見つからない場合は、各ツールのヘルプで機能の名前を検索してほしい。</p>
+<section id="id2">
+<h2><span class="section-number">7.1. </span>ツールの比較<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<table class="docutils align-default" id="id21">
+<caption><span class="caption-number">表 7.1 </span><span class="caption-text">スライド作成ツールの比較</span><a class="headerlink" href="#id21" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 16.0%" />
+<col style="width: 28.0%" />
+<col style="width: 28.0%" />
+<col style="width: 28.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>観点</p></th>
+<th class="head"><p>PowerPoint</p></th>
+<th class="head"><p>Google スライド</p></th>
+<th class="head"><p>Marp</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>作り方</p></td>
+<td><p>画面上で図形や文字を配置する</p></td>
+<td><p>画面上で図形や文字を配置する（ブラウザで動く）</p></td>
+<td><p>Markdown のテキストを書き、HTML や PDF に変換する</p></td>
+</tr>
+<tr class="row-odd"><td><p>デザインの自由度</p></td>
+<td><p>高い。図形の描画や細かな配置ができる</p></td>
+<td><p>中程度。PowerPoint より機能は少ない</p></td>
+<td><p>テーマ CSS の範囲で決まる。図は別のツールで作って画像として貼る</p></td>
+</tr>
+<tr class="row-even"><td><p>共同編集</p></td>
+<td><p>Microsoft 365 の共有機能で可能</p></td>
+<td><p>得意。複数人での同時編集とコメントが標準でできる</p></td>
+<td><p>Git でテキストとして管理し、プルリクエストでレビューできる</p></td>
+</tr>
+<tr class="row-odd"><td><p>再利用と自動化</p></td>
+<td><p>スライドマスター、テンプレート。python-pptx で自動生成できる</p></td>
+<td><p>テーマ、テンプレート。Google Slides API で操作できる</p></td>
+<td><p>テキストなので、コピー、置換、差分の確認、スクリプトでの生成が容易</p></td>
+</tr>
+<tr class="row-even"><td><p>出力形式</p></td>
+<td><p>PPTX、PDF、画像、動画</p></td>
+<td><p>PPTX、PDF、画像（ブラウザで公開も可能）</p></td>
+<td><p>HTML、PDF、PPTX（画像のスライド）、画像</p></td>
+</tr>
+<tr class="row-odd"><td><p>向いている場面</p></td>
+<td><p>社外向けの資料、図の多い資料、会社の標準形式が PowerPoint の場合</p></td>
+<td><p>チームでの共同作成、ブラウザだけで完結させたい場合</p></td>
+<td><p>技術発表、LT、コードの多い資料、Git で管理したい資料</p></td>
+</tr>
+</tbody>
+</table>
+<p>参考として、他のツールも挙げておく。</p>
+<ul class="simple">
+<li><p><strong>Keynote</strong>: Apple のプレゼンテーションソフト。macOS、iPadOS、iOS で使える。アニメーションの表現が豊富である。</p></li>
+<li><p><strong>reveal.js</strong>: HTML、CSS、JavaScript でスライドを作るためのフレームワーク。ブラウザで動くので、Web の技術で自由に表現できる。</p></li>
+<li><p><strong>Slidev</strong>: Markdown でスライドを書くツールで、Vue のコンポーネントを埋め込める。Web フロントエンドの開発者に向いている。</p></li>
+</ul>
+</section>
+<section id="powerpoint">
+<h2><span class="section-number">7.2. </span>PowerPoint<a class="headerlink" href="#powerpoint" title="Link to this heading"></a></h2>
+<p>PowerPoint は、Microsoft が提供するプレゼンテーションソフトで、仕事の資料で最も広く使われている。機能が多いが、スライド作成に重要なのは次の機能である。</p>
+<section id="id3">
+<h3><span class="section-number">7.2.1. </span>スライドマスターとレイアウト<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>スライドマスターは、資料全体のデザイン（背景、フォント、色、タイトルや本文の位置と大きさ）を定義する場所である。「表示」タブの「スライド マスター」で編集する。スライドマスターの下には、「タイトル スライド」「タイトルとコンテンツ」などのレイアウトがあり、スライドの種類ごとの配置を定義している。</p>
+<p>5 章の反復の原則を守るには、個々のスライドで文字の大きさや色を直接変更するのではなく、スライドマスターとレイアウトで定義する。たとえば、本文の文字の大きさを変えたいときは、スライドマスターの本文のプレースホルダー（文字や図を入れる枠）の書式を変更する。そうすれば、すべてのスライドに一度に反映される。</p>
+<p>テーマのフォントと色も、スライドマスターの画面で設定できる。「フォント」で見出しと本文のフォントを、「配色」でメインカラーやアクセントカラーを設定しておくと、新しく追加した図形や表にも自動的に適用される。</p>
+</section>
+<section id="id4">
+<h3><span class="section-number">7.2.2. </span>配置と整列<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>PowerPoint では、図形をドラッグすると、他の図形の端や中心とそろう位置に破線のガイド（スマートガイド）が表示される。これを使えば、目分量に頼らず要素をそろえられる。</p>
+<p>複数の図形をまとめてそろえるには、図形を選択して「ホーム」タブの「配置」から「配置」を選び、「左揃え」「上揃え」「左右に整列」などを使う。「左右に整列」「上下に整列」は、3 つ以上の図形の間隔を等しくする機能である。また、「表示」タブで「グリッド線」を表示すると、スライド全体に等間隔の格子が表示され、5 章で説明したグリッドの目安になる。同じタブの「ガイド」を表示すると、ドラッグして位置を変えられる縦横の線が表示され、余白の位置や列の境目をそろえるのに使える。</p>
+</section>
+<section id="id5">
+<h3><span class="section-number">7.2.3. </span>アウトライン表示<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>「表示」タブの「アウトライン表示」では、各スライドのタイトルと本文の文字だけが一覧で表示される。4 章で説明した「タイトルだけを順に読んで話が通るか」の確認に使える。アウトライン表示では文字を直接編集できるので、構成を考える段階で使ってもよい。</p>
+</section>
+<section id="id6">
+<h3><span class="section-number">7.2.4. </span>発表者ツール<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>各スライドの下にあるノート欄には、発表者ノート（話す内容のメモ）を書ける。発表するときは、「スライド ショー」タブで「発表者ツールを使用する」を有効にしておくと、プロジェクターには通常のスライドを、手元の画面には発表者ツールを表示できる。発表者ツールには、現在のスライド、次のスライド、発表者ノート、経過時間が表示される。</p>
+<p>スライドショー中には、次のキー操作が使える。</p>
+<ul class="simple">
+<li><p><kbd class="kbd docutils literal notranslate">B</kbd> キー: 画面を黒くする（もう一度押すと戻る）。話に集中してほしいときや、休憩のときに使う。</p></li>
+<li><p><kbd class="kbd docutils literal notranslate">W</kbd> キー: 画面を白くする。</p></li>
+<li><p>数字を入力して <kbd class="kbd docutils literal notranslate">Enter</kbd> キー: 指定した番号のスライドに移動する。質疑応答で付録のスライドを見せるときに便利である。</p></li>
+<li><p><kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">L</kbd> キー: マウスポインターをレーザーポインターにする。</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3><span class="section-number">7.2.5. </span>その他の機能<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>PDF への出力</strong>: 「ファイル」の「エクスポート」から、PDF を作成できる。配布する場合や、別のパソコンで発表する場合にフォントが置き換わるのを防げる。</p></li>
+<li><p><strong>アクセシビリティ チェック</strong>: 「校閲」タブの「アクセシビリティ チェック」で、画像の代替テキストの不足や、読みにくい色の組み合わせなどを確認できる。</p></li>
+<li><p><strong>デザイナー</strong>: Microsoft 365 の PowerPoint では、スライドの内容に合わせたレイアウトの候補を提案する機能がある。候補をそのまま使う場合も、5 章の原則に照らして確認する。</p></li>
+</ul>
+</section>
+</section>
+<section id="google">
+<h2><span class="section-number">7.3. </span>Google スライド<a class="headerlink" href="#google" title="Link to this heading"></a></h2>
+<p>Google スライドは、Google が提供するブラウザで動くプレゼンテーションソフトである。ファイルは Google ドライブに保存され、URL を共有するだけで複数人で同時に編集できる。</p>
+<section id="id8">
+<h3><span class="section-number">7.3.1. </span>テーマ<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>Google スライドのテーマは、PowerPoint のスライドマスターに相当する。「表示」メニューの「テーマビルダー」で、資料全体の背景、フォント、色、レイアウトごとの配置を編集する。PowerPoint と同様に、個々のスライドで書式を直接変更するのではなく、テーマで定義する。</p>
+<p>チームで共通のテーマを使う場合は、テーマを設定した空の資料をテンプレートとして共有し、新しい資料はそれをコピーして作るとよい。</p>
+</section>
+<section id="id9">
+<h3><span class="section-number">7.3.2. </span>配置と整列<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>図形をドラッグすると、他の図形との位置関係を示すガイドが表示される。複数の図形をそろえるには、図形を選択して「配置」メニューの「整列」や「均等に配置」を使う。「表示」メニューの「ガイド」で、任意の位置にガイドの線を追加することもできる。</p>
+</section>
+<section id="id10">
+<h3><span class="section-number">7.3.3. </span>共同編集とコメント<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>Google スライドの最大の利点は、共同編集である。</p>
+<ul class="simple">
+<li><p>複数人が同時に同じ資料を編集できる。他の人がどのスライドを編集しているかが表示される。</p></li>
+<li><p>スライド上の要素を選んでコメントを付けられる。コメントで相手を指名（&#64; の後にメールアドレスや名前を入力）すると、相手に通知が届き、対応すべき作業として割り当てることもできる。12 章で説明するレビューに使える。</p></li>
+<li><p>「ファイル」メニューの「変更履歴」で、過去の版を確認し、必要なら元に戻せる。</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3><span class="section-number">7.3.4. </span>発表<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>「スライドショー」ボタンの横の矢印から「プレゼンター表示」を選ぶと、発表者ノート、次のスライド、タイマーを表示する画面が別のウィンドウで開く。プレゼンター表示の「視聴者ツール」では、聞き手がスマートフォンなどから質問を投稿できる Q&amp;A の機能を使える。</p>
+<p>Google スライドはブラウザで動くので、発表する会場でインターネットにつながらない場合に備える必要がある。事前にオフラインで使えるように設定しておくか、PDF や PPTX にダウンロードしておく（「ファイル」メニューの「ダウンロード」）。PPTX に変換すると、フォントやレイアウトが変わることがあるので、変換後のファイルを必ず確認する。</p>
+</section>
+</section>
+<section id="marp">
+<h2><span class="section-number">7.4. </span>Marp<a class="headerlink" href="#marp" title="Link to this heading"></a></h2>
+<p>Marp は、Markdown でスライドを作るためのツール群である。テキストエディタで Markdown を書き、HTML、PDF、PPTX、画像に変換する。エンジニアにとっては、次の利点がある。</p>
+<ul class="simple">
+<li><p><strong>テキストで書ける</strong>: 普段使っているエディタで、キーボードだけでスライドを作れる。4 章で作った Markdown のアウトラインを、そのままスライドに育てられる。</p></li>
+<li><p><strong>Git で管理できる</strong>: 変更の差分を確認でき、プルリクエストでスライドのレビューができる。</p></li>
+<li><p><strong>内容とデザインを分けられる</strong>: デザインはテーマ CSS で 1 か所に定義するので、本文を書くときは内容に集中できる。反復の原則が自動的に守られる。</p></li>
+<li><p><strong>コードを載せやすい</strong>: Markdown のコードブロックがそのまま使え、構文が自動で色分けされる。</p></li>
+</ul>
+<p>一方で、図形を自由に配置するのは苦手である。図は、Graphviz、Mermaid、draw.io、matplotlib などで作成し、画像として貼り付ける。</p>
+<section id="id12">
+<h3><span class="section-number">7.4.1. </span>導入<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+<p>Marp には主に 2 つの使い方がある。</p>
+<dl class="simple">
+<dt>Marp for VS Code</dt><dd><p>VS Code の拡張機能である。拡張機能のビューで「Marp for VS Code」を検索してインストールすると、Markdown のプレビューにスライドが表示されるようになる。コマンドパレットの「Marp: Export Slide Deck」で、HTML、PDF、PPTX、画像に出力できる。</p>
+</dd>
+<dt>Marp CLI</dt><dd><p>コマンドラインから変換するツールである。Node.js が必要で、npm でインストールする。複数のファイルの一括変換や、ビルドの自動化に向いている。</p>
+</dd>
+</dl>
+<p>Marp CLI は、次のいずれかの方法で使う。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># グローバルにインストールする（marp コマンドが使えるようになる）</span>
+<span class="linenos"> 2</span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@marp-team/marp-cli
+<span class="linenos"> 3</span>marp<span class="w"> </span>--version
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="c1"># インストールせずに一時的に使う</span>
+<span class="linenos"> 6</span>npx<span class="w"> </span>@marp-team/marp-cli@latest<span class="w"> </span>slide.md<span class="w"> </span>--pdf
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># プロジェクトごとにインストールする（プロジェクトのフォルダで実行する）</span>
+<span class="linenos"> 9</span>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>@marp-team/marp-cli
+<span class="linenos">10</span>npx<span class="w"> </span>marp<span class="w"> </span>slide.md<span class="w"> </span>--pdf
+</pre></div>
+</div>
+<p>PDF、PPTX、画像に変換するには、Google Chrome、Microsoft Edge、Firefox のいずれかのブラウザがインストールされている必要がある。Marp CLI は、これらのブラウザを使ってスライドを描画している。</p>
+</section>
+<section id="id13">
+<h3><span class="section-number">7.4.2. </span>基本の書き方<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>Marp のスライドは、通常の Markdown ファイルである。先頭のフロントマター（<code class="docutils literal notranslate"><span class="pre">---</span></code> で囲んだ部分）に <code class="docutils literal notranslate"><span class="pre">marp:</span> <span class="pre">true</span></code> を書くと、Marp のスライドとして扱われる。スライドとスライドの区切りには、<code class="docutils literal notranslate"><span class="pre">---</span></code> だけの行を使う。</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>---
+<span class="linenos"> 2</span>marp: true
+<span class="linenos"> 3</span>theme: default
+<span class="linenos"> 4</span><span class="gu">paginate: true</span>
+<span class="linenos"> 5</span><span class="gu">---</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="gh"># ログ検索を 10 倍速くした話</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span>インデックスの見直しで、障害調査の待ち時間を減らした
+<span class="linenos">10</span>
+<span class="linenos">11</span>---
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="gu">## 結論: 検索の待ち時間は 30 秒から 3 秒になった</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="k">-</span><span class="w"> </span>原因は、日付で絞り込まずに全期間を検索していたこと
+<span class="linenos">16</span><span class="k">-</span><span class="w"> </span>日付でパーティションを分け、よく使う項目にインデックスを付けた
+<span class="linenos">17</span>
+<span class="linenos">18</span>&lt;!--
+<span class="linenos">19</span>発表者ノート: 最初に結論を言い切る。
+<span class="linenos">20</span>--&gt;
+</pre></div>
+</div>
+<p>1〜5 行目がフロントマター、11 行目がスライドの区切りである。18〜20 行目のように HTML のコメントで書いた内容は、スライドには表示されず、発表者ノートとして扱われる。</p>
+</section>
+<section id="id14">
+<h3><span class="section-number">7.4.3. </span>ディレクティブ<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<p>Marp では、ディレクティブと呼ばれる設定でスライドの見た目を制御する。ディレクティブは、フロントマターか HTML のコメントの中に書く。</p>
+<table class="docutils align-default" id="id22">
+<caption><span class="caption-number">表 7.2 </span><span class="caption-text">よく使うディレクティブ</span><a class="headerlink" href="#id22" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 15.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ディレクティブ</p></th>
+<th class="head"><p>種類</p></th>
+<th class="head"><p>意味</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">theme</span></code></p></td>
+<td><p>グローバル</p></td>
+<td><p>使うテーマ。組み込みのテーマとして <code class="docutils literal notranslate"><span class="pre">default</span></code>、<code class="docutils literal notranslate"><span class="pre">gaia</span></code>、<code class="docutils literal notranslate"><span class="pre">uncover</span></code> がある</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">size</span></code></p></td>
+<td><p>グローバル</p></td>
+<td><p>スライドの縦横比。<code class="docutils literal notranslate"><span class="pre">16:9</span></code> または <code class="docutils literal notranslate"><span class="pre">4:3</span></code>。既定は <code class="docutils literal notranslate"><span class="pre">16:9</span></code> で、大きさは 1280 × 720 px になる</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">headingDivider</span></code></p></td>
+<td><p>グローバル</p></td>
+<td><p>指定したレベルの見出しの前で、自動的にスライドを区切る。たとえば <code class="docutils literal notranslate"><span class="pre">2</span></code> にすると <code class="docutils literal notranslate"><span class="pre">##</span></code> ごとに区切られる</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">paginate</span></code></p></td>
+<td><p>ローカル</p></td>
+<td><p>ページ番号を表示するかどうか</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">header</span></code>、<code class="docutils literal notranslate"><span class="pre">footer</span></code></p></td>
+<td><p>ローカル</p></td>
+<td><p>ヘッダーとフッターに表示する文字</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">class</span></code></p></td>
+<td><p>ローカル</p></td>
+<td><p>スライドに付ける CSS のクラス。テーマで定義したレイアウトの切り替えに使う</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">backgroundColor</span></code>、<code class="docutils literal notranslate"><span class="pre">color</span></code></p></td>
+<td><p>ローカル</p></td>
+<td><p>背景色と文字色</p></td>
+</tr>
+</tbody>
+</table>
+<p>グローバルディレクティブは資料全体に適用される。ローカルディレクティブは、書いたスライドとそれ以降のスライドに適用される。ローカルディレクティブの名前の前に <code class="docutils literal notranslate"><span class="pre">_</span></code> を付けると、そのスライドだけに適用される（スポットディレクティブ）。たとえば、表紙だけページ番号を消すには、表紙のスライドに次のように書く。</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>&lt;!-- _paginate: false --&gt;
+<span class="linenos">2</span>&lt;!-- _class: lead --&gt;
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="gh"># ログ検索を 10 倍速くした話</span>
+</pre></div>
+</div>
+</section>
+<section id="id15">
+<h3><span class="section-number">7.4.4. </span>画像<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<p>画像は Markdown の画像の記法で貼り付ける。代替テキストの位置に、大きさや配置のキーワードを書ける。</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>![<span class="nt">w:600</span>](<span class="na">images/architecture.png</span>)
+<span class="linenos">2</span>
+<span class="linenos">3</span>![<span class="nt">bg</span>](<span class="na">images/background.png</span>)
+<span class="linenos">4</span>
+<span class="linenos">5</span>![<span class="nt">bg right:40%</span>](<span class="na">images/graph.png</span>)
+</pre></div>
+</div>
+<p>1 行目は幅 600 px で表示する。3 行目の <code class="docutils literal notranslate"><span class="pre">bg</span></code> は、画像をスライドの背景にする。5 行目の <code class="docutils literal notranslate"><span class="pre">bg</span> <span class="pre">right:40%</span></code> は、スライドの右側 40 % を画像にし、左側に本文を表示する。図と説明を左右に並べるレイアウトが簡単に作れる。</p>
+<p>ローカルの画像ファイルを使うスライドを Marp CLI で PDF、PPTX、画像に変換する場合は、<code class="docutils literal notranslate"><span class="pre">--allow-local-files</span></code> オプションが必要になる。</p>
+</section>
+<section id="css">
+<h3><span class="section-number">7.4.5. </span>テーマ CSS<a class="headerlink" href="#css" title="Link to this heading"></a></h3>
+<p>Marp のテーマは CSS で書く。1 枚のスライドは <code class="docutils literal notranslate"><span class="pre">section</span></code> 要素で表されるので、<code class="docutils literal notranslate"><span class="pre">section</span></code> に対してスタイルを指定する。CSS の先頭に <code class="docutils literal notranslate"><span class="pre">/*</span> <span class="pre">&#64;theme</span> <span class="pre">テーマ名</span> <span class="pre">*/</span></code> というコメントを書くと、テーマ名が登録される。<code class="docutils literal notranslate"><span class="pre">&#64;import</span> <span class="pre">'default';</span></code> と書けば、組み込みのテーマを土台にして、変えたい部分だけを上書きできる。</p>
+<p>本書のサンプルでは、5 章の原則に沿って作ったテーマ <code class="docutils literal notranslate"><span class="pre">simple</span></code> を使っている。次はその一部である（全体は付録 C からダウンロードできる）。</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c">/* @theme simple */</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="c">/*</span>
+<span class="linenos"> 4</span><span class="c"> * 本書のサンプル用テーマ「simple」。</span>
+<span class="linenos"> 5</span><span class="c"> * Marp の組み込みテーマ default を土台にして、文字・色・余白だけを変えている。</span>
+<span class="linenos"> 6</span><span class="c"> *</span>
+<span class="linenos"> 7</span><span class="c"> * 配色: ベースカラー（白）、メインカラー（紺）、アクセントカラー（橙）の 3 色。</span>
+<span class="linenos"> 8</span><span class="c"> * 文字: スライドの大きさは 1280 x 720 px で、PowerPoint の 16:9（13.33 x 7.5 インチ）と</span>
+<span class="linenos"> 9</span><span class="c"> *       同じ縦横比である。換算すると 1 px は 0.75 pt に当たるので、本文の 32 px は 24 pt、</span>
+<span class="linenos">10</span><span class="c"> *       表の 26 px は約 20 pt、コードとヘッダー・フッターの 24 px は 18 pt に相当する。</span>
+<span class="linenos">11</span><span class="c"> */</span>
+<span class="linenos">12</span><span class="p">@</span><span class="k">import</span><span class="w"> </span><span class="s1">&#39;default&#39;</span><span class="p">;</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="nt">section</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">  </span><span class="nv">--main</span><span class="p">:</span><span class="w"> </span><span class="mh">#1f4e79</span><span class="p">;</span>
+<span class="linenos">16</span><span class="w">  </span><span class="nv">--accent</span><span class="p">:</span><span class="w"> </span><span class="mh">#d9480f</span><span class="p">;</span>
+<span class="linenos">17</span><span class="w">  </span><span class="nv">--text</span><span class="p">:</span><span class="w"> </span><span class="mh">#1f2933</span><span class="p">;</span>
+<span class="linenos">18</span><span class="w">  </span><span class="nv">--muted</span><span class="p">:</span><span class="w"> </span><span class="mh">#6b7785</span><span class="p">;</span>
+<span class="linenos">19</span><span class="w">  </span><span class="nv">--light</span><span class="p">:</span><span class="w"> </span><span class="mh">#eef3f8</span><span class="p">;</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Noto Sans JP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Yu Gothic UI&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Meiryo&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="linenos">22</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">23</span><span class="w">  </span><span class="k">line-height</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">;</span>
+<span class="linenos">24</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--text</span><span class="p">);</span>
+<span class="linenos">25</span><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#ffffff</span><span class="p">;</span>
+<span class="linenos">26</span><span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">88</span><span class="kt">px</span><span class="w"> </span><span class="mi">72</span><span class="kt">px</span><span class="w"> </span><span class="mi">64</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">  </span><span class="c">/* default テーマは place-content で上下中央に寄せるので、通常のスライドは上から並べる */</span>
+<span class="linenos">28</span><span class="w">  </span><span class="k">place-content</span><span class="p">:</span><span class="w"> </span><span class="kc">start</span><span class="p">;</span>
+<span class="linenos">29</span><span class="p">}</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="c">/* 見出し: h1 は表紙と区切り、h2 は各スライドのタイトルに使う */</span>
+<span class="linenos">32</span><span class="nt">section</span><span class="w"> </span><span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">33</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">54</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">34</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--main</span><span class="p">);</span>
+<span class="linenos">35</span><span class="p">}</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span><span class="nt">section</span><span class="w"> </span><span class="nt">h2</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">38</span><span class="w">  </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">39</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--main</span><span class="p">);</span>
+<span class="linenos">40</span><span class="w">  </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--main</span><span class="p">);</span>
+<span class="linenos">41</span><span class="w">  </span><span class="k">padding-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">42</span><span class="w">  </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="linenos">43</span><span class="p">}</span>
+<span class="linenos">44</span>
+<span class="linenos">45</span><span class="c">/* 強調はアクセントカラーだけにする（太字と色の両方で目立たせる） */</span>
+<span class="linenos">46</span><span class="nt">section</span><span class="w"> </span><span class="nt">strong</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">47</span><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--accent</span><span class="p">);</span>
+<span class="linenos">48</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>このテーマでは、次の点を定義している。</p>
+<ul class="simple">
+<li><p>配色: メインカラー（紺）とアクセントカラー（橙）を CSS の変数として定義し（15〜16 行目）、ベースカラーの白を背景に指定している（25 行目）。</p></li>
+<li><p>文字の大きさ: 本文を 32 px（24 pt 相当）、スライドのタイトル（<code class="docutils literal notranslate"><span class="pre">##</span></code>）を 44 px にしている。</p></li>
+<li><p>強調: <code class="docutils literal notranslate"><span class="pre">**太字**</span></code> で書いた部分を、アクセントカラーで表示する。</p></li>
+<li><p>レイアウトの種類: 表紙や区切りに使う <code class="docutils literal notranslate"><span class="pre">lead</span></code> と、1 文だけを大きく見せる <code class="docutils literal notranslate"><span class="pre">message</span></code> の 2 つのクラスを定義している（全体のファイルを参照）。</p></li>
+</ul>
+<p>自作のテーマを使うには、Marp CLI では <code class="docutils literal notranslate"><span class="pre">--theme-set</span></code> オプションでテーマ CSS のファイルかフォルダを指定する。Marp for VS Code では、VS Code の設定 <code class="docutils literal notranslate"><span class="pre">markdown.marp.themes</span></code> にテーマ CSS のパスを追加する。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="c1"># テーマを指定して HTML に変換する</span>
+<span class="linenos">2</span>marp<span class="w"> </span>tech_talk.md<span class="w"> </span>--theme-set<span class="w"> </span>themes/simple.css<span class="w"> </span>-o<span class="w"> </span>tech_talk.html
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="c1"># PDF に変換する</span>
+<span class="linenos">5</span>marp<span class="w"> </span>tech_talk.md<span class="w"> </span>--theme-set<span class="w"> </span>themes/simple.css<span class="w"> </span>--pdf
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">--theme-set</span></code> は複数の値を受け取るオプションなので、入力ファイルより後ろに書く。前に書くと、入力ファイルの名前までテーマとして解釈されることがある。</p>
+</section>
+<section id="id16">
+<h3><span class="section-number">7.4.6. </span>出力形式<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<p>Marp CLI は、次の形式に出力できる。</p>
+<table class="docutils align-default" id="id23">
+<caption><span class="caption-number">表 7.3 </span><span class="caption-text">Marp CLI の出力形式</span><a class="headerlink" href="#id23" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 30.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>形式</p></th>
+<th class="head"><p>オプション</p></th>
+<th class="head"><p>特徴</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>HTML</p></td>
+<td><p>（指定なし）</p></td>
+<td><p>ブラウザで発表できる。キーボードの矢印キーで移動し、<kbd class="kbd docutils literal notranslate">P</kbd> キーで発表者ノート付きの発表者用の画面を開ける</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDF</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">--pdf</span></code></p></td>
+<td><p>配布に向く。<code class="docutils literal notranslate"><span class="pre">--pdf-notes</span></code> を付けると、発表者ノートを PDF の注釈として含める</p></td>
+</tr>
+<tr class="row-even"><td><p>PPTX</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">--pptx</span></code></p></td>
+<td><p>PowerPoint で開いて発表できる。ただし、各スライドは画像として埋め込まれるので、PowerPoint で文字を編集することはできない。発表者ノートは PowerPoint のノートに入る</p></td>
+</tr>
+<tr class="row-odd"><td><p>画像</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">--images</span> <span class="pre">png</span></code>、<code class="docutils literal notranslate"><span class="pre">--image</span> <span class="pre">png</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">--images</span></code> はすべてのスライドを、<code class="docutils literal notranslate"><span class="pre">--image</span></code> は 1 枚目だけを画像にする。SNS やブログでの紹介に使える</p></td>
+</tr>
+</tbody>
+</table>
+<p>PPTX の出力は、会場のパソコンに PowerPoint しかない場合などに便利だが、受け取った人が PowerPoint で編集することはできない点に注意する。編集できる PPTX を出力する実験的な機能もあるが、LibreOffice が必要で、レイアウトが完全には再現されない。編集してもらう必要がある場合は、最初から PowerPoint か Google スライドで作るほうがよい。</p>
+<p>開発中は、<code class="docutils literal notranslate"><span class="pre">-w</span></code> オプション（ファイルの変更を監視して自動で変換する）や <code class="docutils literal notranslate"><span class="pre">-p</span></code> オプション（変換後にプレビューのウィンドウを開く）を使うと、編集しながら結果を確認できる。</p>
+</section>
+<section id="git">
+<h3><span class="section-number">7.4.7. </span>Git での管理<a class="headerlink" href="#git" title="Link to this heading"></a></h3>
+<p>Marp のスライドはテキストなので、ソースコードと同じように Git で管理できる。</p>
+<ul class="simple">
+<li><p>スライドの変更をコミットとして記録し、差分で何が変わったかを確認できる。</p></li>
+<li><p>共同で作る場合は、プルリクエストでレビューできる。誤字や数値の誤りを、行単位でコメントできる。</p></li>
+<li><p>変換した HTML や PDF はリポジトリに含めず、CI（継続的インテグレーション）で Marp CLI を実行して生成する方法もある。</p></li>
+</ul>
+</section>
+<section id="id17">
+<h3><span class="section-number">7.4.8. </span>サンプルスライド<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<p>本書では、4 章の構成例に沿った 3 つのサンプルを用意した。いずれも、テーマ <code class="docutils literal notranslate"><span class="pre">simple</span></code> を使っている。HTML 版と PDF 版の閲覧、Markdown のダウンロード、変換のコマンドは、<a class="reference internal" href="appendix_c_samples.html"><span class="doc">付録 C サンプル一覧</span></a> にまとめている。</p>
+<dl class="simple">
+<dt>技術発表（11 枚）</dt><dd><p>社内勉強会での「ログ検索を 10 倍速くした話」。結論 → 背景 → 原因 → 対策 → 結果 → まとめ → 付録 の順に構成している。</p>
+</dd>
+<dt>進捗報告（6 枚）</dt><dd><p>決済 API の移行プロジェクトの週次報告。結論と依頼を最初に示し、判断を求める。</p>
+</dd>
+<dt>LT（8 枚）</dt><dd><p>5 分の LT「レビューの指摘を半分にした話」。1 つのメッセージに絞り、大きな文字で見せる。</p>
+</dd>
+</dl>
+<p>次に、技術発表のサンプルの Markdown と、変換したスライドの一部を示す。</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>---
+<span class="linenos"> 2</span>marp: true
+<span class="linenos"> 3</span>theme: simple
+<span class="linenos"> 4</span>paginate: true
+<span class="linenos"> 5</span>header: 社内技術勉強会
+<span class="linenos"> 6</span>footer: 基盤チーム 山田（架空の発表例）
+<span class="linenos"> 7</span><span class="gu">title: ログ検索を 10 倍速くした話</span>
+<span class="linenos"> 8</span><span class="gu">---</span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span>&lt;!-- _class: lead --&gt;
+<span class="linenos">11</span>&lt;!-- _paginate: false --&gt;
+<span class="linenos">12</span>&lt;!-- _header: &#39;&#39; --&gt;
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="gh"># ログ検索を 10 倍速くした話</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span>インデックスの見直しで、障害調査の待ち時間を減らした
+<span class="linenos">17</span>
+<span class="linenos">18</span>&lt;!--
+<span class="linenos">19</span>発表者ノート: 自己紹介は 1 文で済ませ、すぐに結論へ進む。
+<span class="linenos">20</span>--&gt;
+<span class="linenos">21</span>
+<span class="linenos">22</span>---
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="gu">## 結論: 検索の待ち時間は 30 秒から 3 秒になった</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="k">-</span><span class="w"> </span>原因は、日付で絞り込まずに全期間を検索していたこと
+<span class="linenos">27</span><span class="k">-</span><span class="w"> </span>日付でパーティションを分け、よく使う項目にインデックスを付けた
+<span class="linenos">28</span><span class="k">-</span><span class="w"> </span>障害調査 1 件あたりの検索待ちが <span class="gs">**合計 20 分 → 2 分**</span> に減った
+<span class="linenos">29</span>
+<span class="linenos">30</span>&lt;!--
+<span class="linenos">31</span>最初に結論を言い切る。聞き手には、このスライドの内容だけでも覚えて帰ってもらう。
+<span class="linenos">32</span>--&gt;
+</pre></div>
+</div>
+<figure class="align-center" id="id24">
+<a class="slide-image reference internal image-reference" href="_images/tech_talk.001.png"><img alt="技術発表のサンプルの表紙のスライド" class="slide-image" src="_images/tech_talk.001.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 7.1 </span><span class="caption-text">表紙のスライド（上の 10〜20 行目）</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id25">
+<a class="slide-image reference internal image-reference" href="_images/tech_talk.002.png"><img alt="技術発表のサンプルの結論のスライド" class="slide-image" src="_images/tech_talk.002.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 7.2 </span><span class="caption-text">結論のスライド（上の 24〜32 行目）</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>表紙では、スポットディレクティブで <code class="docutils literal notranslate"><span class="pre">lead</span></code> クラスを指定し、ページ番号とヘッダーを消している。結論のスライドでは、アクションタイトルで結論を述べ、<code class="docutils literal notranslate"><span class="pre">**</span></code> で囲んだ数値をアクセントカラーで強調している。</p>
+<p>進捗報告のサンプルの「依頼」のスライドでは、Markdown の表で選択肢を比較し、判断の期限を強調している。</p>
+<figure class="align-center" id="id26">
+<a class="slide-image reference internal image-reference" href="_images/progress_report.004.png"><img alt="進捗報告のサンプルの、2 つの案を表で比較した依頼のスライド" class="slide-image" src="_images/progress_report.004.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 7.3 </span><span class="caption-text">依頼のスライド（進捗報告のサンプル）</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>LT のサンプルでは、<code class="docutils literal notranslate"><span class="pre">message</span></code> クラスを使って、1 文だけを大きく見せるスライドを挟んでいる。</p>
+<figure class="align-center" id="id27">
+<a class="slide-image reference internal image-reference" href="_images/lightning_talk.002.png"><img alt="LT のサンプルの、1 文だけを大きく表示したスライド" class="slide-image" src="_images/lightning_talk.002.png" style="width: 640px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">図 7.4 </span><span class="caption-text">1 文だけを見せるスライド（LT のサンプル）</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="id18">
+<h2><span class="section-number">7.5. </span>PowerPoint ファイルの自動生成<a class="headerlink" href="#id18" title="Link to this heading"></a></h2>
+<p>毎週の報告資料のように、同じ形式のスライドにデータだけを入れ替えて作る資料は、プログラムで自動生成できる。Python では、python-pptx というライブラリで PowerPoint のファイル（PPTX）を作成・編集できる。ここでは、どのようなことができるかを簡単に紹介する。</p>
+<p>python-pptx は pip でインストールする。</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>pip<span class="w"> </span>install<span class="w"> </span>python-pptx
+</pre></div>
+</div>
+<p>次のコードは、タイトルのスライドと箇条書きのスライドを 1 枚ずつ作り、ファイルに保存する。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">pptx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Presentation</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">prs</span> <span class="o">=</span> <span class="n">Presentation</span><span class="p">(</span><span class="s1">&#39;team_template.pptx&#39;</span><span class="p">)</span>  <span class="c1"># 会社やチームのテンプレートを読み込む</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">title_slide</span> <span class="o">=</span> <span class="n">prs</span><span class="o">.</span><span class="n">slides</span><span class="o">.</span><span class="n">add_slide</span><span class="p">(</span><span class="n">prs</span><span class="o">.</span><span class="n">slide_layouts</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># 0 番目のレイアウト（タイトル スライド）</span>
+<span class="linenos"> 6</span><span class="n">title_slide</span><span class="o">.</span><span class="n">shapes</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;決済 API 移行プロジェクト 週次報告&#39;</span>
+<span class="linenos"> 7</span><span class="n">title_slide</span><span class="o">.</span><span class="n">placeholders</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;2026 年 11 月第 1 週&#39;</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="n">body_slide</span> <span class="o">=</span> <span class="n">prs</span><span class="o">.</span><span class="n">slides</span><span class="o">.</span><span class="n">add_slide</span><span class="p">(</span><span class="n">prs</span><span class="o">.</span><span class="n">slide_layouts</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># 1 番目のレイアウト（タイトルとコンテンツ）</span>
+<span class="linenos">10</span><span class="n">body_slide</span><span class="o">.</span><span class="n">shapes</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;進捗: 12 本中 9 本の移行が完了した&#39;</span>
+<span class="linenos">11</span><span class="n">text_frame</span> <span class="o">=</span> <span class="n">body_slide</span><span class="o">.</span><span class="n">placeholders</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text_frame</span>
+<span class="linenos">12</span><span class="n">text_frame</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;完了: 9 本&#39;</span>
+<span class="linenos">13</span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;作業中: 2 本&#39;</span><span class="p">,</span> <span class="s1">&#39;未着手: 1 本&#39;</span><span class="p">]:</span>
+<span class="linenos">14</span>    <span class="n">paragraph</span> <span class="o">=</span> <span class="n">text_frame</span><span class="o">.</span><span class="n">add_paragraph</span><span class="p">()</span>
+<span class="linenos">15</span>    <span class="n">paragraph</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">line</span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="n">prs</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;weekly_report.pptx&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>3 行目で既存のテンプレートを読み込み、5 行目と 9 行目でテンプレートのレイアウトを指定してスライドを追加している。<code class="docutils literal notranslate"><span class="pre">Presentation()</span></code> のように引数なしで呼ぶと python-pptx に付属する既定のテンプレートが使われるが、その縦横比は 4:3 なので、実際の資料ではスライドマスターを整えた自分たちのテンプレートを読み込むのがよい。レイアウトの番号やプレースホルダーの番号は、テンプレートによって異なる。</p>
+<p>python-pptx では、このほかに表、グラフ、画像の追加や、既存のスライドの文字の置き換えもできる。</p>
+<p>自動生成は、次のような場合に向いている。</p>
+<ul class="simple">
+<li><p>毎週・毎月の定型の報告で、データの集計からスライドの作成までを自動化したい場合</p></li>
+<li><p>多数の対象（サービスごと、顧客ごとなど）について、同じ形式の資料を作る場合</p></li>
+</ul>
+<p>一方で、ストーリーの組み立てや、メッセージに合わせた図の工夫が必要な資料には向いていない。自動生成した資料も、発表の前に人が読み、4 章と 5 章の観点で確認する。</p>
+</section>
+<section id="id19">
+<h2><span class="section-number">7.6. </span>ツールの選び方<a class="headerlink" href="#id19" title="Link to this heading"></a></h2>
+<p>どのツールを使うかは、次の観点で決める。</p>
+<ul class="simple">
+<li><p><strong>職場の標準と、受け取る人の環境</strong>: 資料を受け取った人が編集する必要があるなら、相手が使えるツールで作る。社外とのやり取りでは PowerPoint が最も無難である。</p></li>
+<li><p><strong>共同編集の必要性</strong>: 複数人で同時に作るなら Google スライドが便利である。エンジニアだけで作るなら、Marp と Git での共同作業も選択肢になる。</p></li>
+<li><p><strong>図の量</strong>: 図解を多く描くなら、図形を自由に配置できる PowerPoint か Google スライドが向いている。</p></li>
+<li><p><strong>コードの量と再利用性</strong>: コードが多い技術発表や、過去のスライドを部分的に再利用することが多い場合は、Marp が向いている。</p></li>
+</ul>
+<p>どのツールを使う場合も、3 章から 6 章で説明した原則は変わらない。ツールの機能は、原則を手間なく守るための手段である。</p>
+</section>
+<section id="id20">
+<h2><span class="section-number">7.7. </span>この章のまとめ<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>PowerPoint ではスライドマスター、Google スライドではテーマ、Marp ではテーマ CSS で、デザインを 1 か所に定義する。</p></li>
+<li><p>要素の配置には、目分量ではなく整列の機能やガイドを使う。</p></li>
+<li><p>発表者ノートと発表者用の画面（発表者ツール、プレゼンター表示、Marp の HTML の発表者用の画面）を活用する。</p></li>
+<li><p>Marp は Markdown でスライドを書き、Git で管理できる。図形の自由な配置は苦手なので、図は別のツールで作る。</p></li>
+<li><p>定型の資料は、python-pptx などで自動生成できる。</p></li>
+<li><p>ツールは、職場の標準、共同編集の必要性、図とコードの量で選ぶ。</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ch06_figures_and_data.html" class="btn btn-neutral float-left" title="6. 図表とデータの見せ方" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ch08_rehearsal.html" class="btn btn-neutral float-right" title="8. 発表の準備とリハーサル" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
