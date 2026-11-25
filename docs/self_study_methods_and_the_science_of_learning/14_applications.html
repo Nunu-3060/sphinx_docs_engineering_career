@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>14. 分野別の応用 &mdash; 独学の方法と学習科学 1.0 ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a785b5bc" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=19757887"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="15. 学習科学の情報の読み方" href="15_reading_research.html" />
+    <link rel="prev" title="13. 生成 AI と独学" href="13_generative_ai.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            独学の方法と学習科学
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">本編</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_introduction.html">1. はじめに</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_memory.html">2. 記憶と学習の仕組み</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_cognitive_load.html">3. 認知負荷と理解</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_myths.html">4. 学習に関する誤解</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_effective_techniques.html">5. 効果が確認された学習法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_retention.html">6. 記憶を定着させる</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_understanding.html">7. 理解を深める</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_skills.html">8. スキルを身につける</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_metacognition.html">9. メタ認知と自己調整学習</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_motivation_and_habits.html">10. 動機づけと習慣</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_body_and_environment.html">11. 体と環境を整える</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_designing_self_study.html">12. 独学を設計する</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_generative_ai.html">13. 生成 AI と独学</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">14. 分野別の応用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">14.1. 語学</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">14.1.1. 語彙</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">14.1.2. 多読と多聴</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">14.1.3. 話す練習</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">14.1.4. 文法</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">14.2. プログラミング</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">14.2.1. 写経の是非</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">14.2.2. 小さく作って動かす</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">14.2.3. エラーの読み方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">14.2.4. ドキュメントの読み方</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">14.3. 数学・理論系</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id13">14.3.1. 定義と例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">14.3.2. 証明を読む・書く</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">14.3.3. 演習の進め方</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">14.4. 資格試験</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">14.4.1. 過去問題の使い方</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">14.4.2. 試験日から逆算した計画</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">14.4.3. 交互練習と本番に近い練習</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">14.5. 実技・趣味</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id21">14.5.1. 手本を見る</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">14.5.2. 記録する</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">14.5.3. フィードバックを得る</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">14.5.4. 楽しむことを忘れない</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id25">14.6. この章のまとめ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id26">14.7. やってみよう</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="15_reading_research.html">15. 学習科学の情報の読み方</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">付録</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">実践テンプレート</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">用語集</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">参考文献</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">独学の方法と学習科学</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">14. </span>分野別の応用</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1><span class="section-number">14. </span>分野別の応用<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>ここまでの章では、分野を問わず使える学習の原理と方法を説明してきた。本章では、それらを代表的な分野にどう応用するかを説明する。語学、プログラミング、数学・理論系、資格試験、実技・趣味の 5 つを取り上げる。各節では、その分野の特徴を整理し、関係する章の方法を具体的に当てはめる。自分の分野が含まれていなくても、近い分野の節が参考になるはずである。</p>
+<section id="id2">
+<h2><span class="section-number">14.1. </span>語学<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>語学の学習には、語彙や文法のような知識の学習と、聞く、話す、読む、書くというスキルの学習の両方が含まれる（第 8 章）。知識だけを学んでもスキルは身につかず、スキルの練習だけでは知識が体系的に身につかない。両方をバランスよく学ぶことが大切である。</p>
+<section id="id3">
+<h3><span class="section-number">14.1.1. </span>語彙<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>語彙は、語学の中でも特に量が多く、継続的な記憶が必要な部分である。第 6 章の間隔反復が最も効果を発揮する分野の 1 つである。</p>
+<ul class="simple">
+<li><p>頻度の高い語から覚える：日常的な文章の大部分は、比較的少数の頻度の高い語で占められている。まず頻度の高い語を確実に覚える（Nation, 2013）。</p></li>
+<li><p>文脈と一緒に覚える：単語と訳語の対だけでなく、例文の中で覚える。フラッシュカードには、単語を空欄にした例文を使う（第 6 章）。</p></li>
+<li><p>思い出す練習をする：単語帳を眺めるのではなく、訳語を見て単語を思い出す、例文の空欄を埋めるなど、思い出す練習をする（第 5 章）。</p></li>
+<li><p>間隔を空けて復習する：間隔反復のソフトウェアを使うか、ライトナー方式で復習する。</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3><span class="section-number">14.1.2. </span>多読と多聴<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>多くの文章を読み、多くの音声を聞くことは、語彙を文脈の中で定着させ、文法を自然に身につけるのに役立つ。ただし、知らない語が多すぎる文章では、内容を理解できず、学習の効率が下がる（第 3 章の認知負荷）。一般に、文章を辞書なしで楽しんで読むには、文章中の語のおよそ 98 % を知っていることが目安とされる（Nation, 2013）。</p>
+<ul class="simple">
+<li><p>自分の水準に合った教材（学習者向けに語彙を制限した本など）から始める。</p></li>
+<li><p>内容に興味がもてる教材を選ぶ（第 10 章の内発的動機づけ）。</p></li>
+<li><p>知らない語をいちいち辞書で調べず、文脈から推測して読み進める。繰り返し出てくる語は、後でまとめて調べてカードにする。</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3><span class="section-number">14.1.3. </span>話す練習<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>話すことは、知識を自動的に使えるようにするスキルである（第 8 章の自律段階）。独学では話す機会が少ないため、意識して機会を作る必要がある。</p>
+<ul class="simple">
+<li><p>独り言：日常の行動や考えを、学んでいる言語で口に出す。</p></li>
+<li><p>音読とシャドーイング：手本の音声を聞きながら、少し遅れて同じように発音する。自分の発音を録音して手本と比べる（第 8 章のフィードバック）。</p></li>
+<li><p>会話の練習：オンラインの会話の授業、言語交換の相手、生成 AI の会話の練習相手（第 13 章）を利用する。</p></li>
+<li><p>言いたかったのに言えなかった表現を記録し、調べて覚える。</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3><span class="section-number">14.1.4. </span>文法<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>文法は、規則を理解する段階（第 8 章の認知段階）と、規則を意識せずに使える段階（自律段階）に分けて考える。</p>
+<ul class="simple">
+<li><p>まず、規則を例文とともに理解する。規則の説明を読んだら、自分で例文を作ってみる。</p></li>
+<li><p>似ていて混同しやすい文法事項（例えば、英語の現在完了形と過去形）は、並べて比較し、交互に練習する（第 5 章の交互練習）。</p></li>
+<li><p>理解した規則は、話す、書く練習の中で繰り返し使い、自動化していく。</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2><span class="section-number">14.2. </span>プログラミング<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<p>プログラミングの学習には、言語の文法やライブラリの知識と、問題を分解してコードに落とし込む、誤りを見つけて直すといったスキルの両方が必要である。</p>
+<section id="id8">
+<h3><span class="section-number">14.2.1. </span>写経の是非<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>教材のコードをそのまま書き写す「写経」は、プログラミングの初学者によく勧められる。写経には、文法や書き方に慣れる、タイピングを自動化するといった効果がある。しかし、何も考えずに書き写すだけでは、第 4 章の再読と同じく、理解は深まりにくい。写経をするなら、以下の工夫をするとよい。</p>
+<ul class="simple">
+<li><p>書き写す前に、そのコードが何をするのかを予想する。</p></li>
+<li><p>1 行ずつ、何をしている行なのかを自分に説明しながら書く（第 5 章の自己説明）。</p></li>
+<li><p>書き写した後、コードの一部を変えて、結果がどう変わるかを予想してから実行する。</p></li>
+<li><p>教材を閉じて、同じ機能のコードを自分で書いてみる（第 5 章の検索練習）。</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3><span class="section-number">14.2.2. </span>小さく作って動かす<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<p>プログラミングでは、コードを実行すればすぐに結果が分かるので、フィードバックが得やすい（第 8 章）。この利点を活かすには、一度に大量のコードを書かず、小さな単位で書いては実行し、動くことを確かめながら進める。一度に多くのコードを書くと、誤りがどこにあるのかを特定するのが難しくなり、作業記憶の負荷も大きくなる（第 3 章）。</p>
+<p>例えば、ファイルの内容を読み込んで集計する処理を作るなら、以下のように段階を分ける。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># 段階 1：ファイルを読み込めることを確かめる</span>
+<span class="linenos"> 2</span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sales.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="linenos"> 3</span>    <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="linenos"> 4</span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">))</span>  <span class="c1"># 行数が期待通りか確かめる</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="c1"># 段階 2：1 行を分割できることを確かめる</span>
+<span class="linenos"> 7</span><span class="nb">print</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="c1"># 段階 3：金額の列を合計する</span>
+<span class="linenos">10</span><span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)[</span><span class="mi">2</span><span class="p">])</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+<span class="linenos">11</span><span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>各段階で結果を確かめてから次に進めば、誤りが起きたときに、どの段階に原因があるかがすぐに分かる。</p>
+</section>
+<section id="id10">
+<h3><span class="section-number">14.2.3. </span>エラーの読み方<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>エラーは、プログラミングの学習で最も頻繁に得られるフィードバックである。エラーが出たら、慌てて検索したり、生成 AI に貼り付けたりする前に、以下の手順でエラーの文章を読む。</p>
+<ol class="arabic simple">
+<li><p>エラーの種類を確かめる（例：構文の誤り、型の誤り、ファイルが見つからない）。</p></li>
+<li><p>エラーが起きた場所（ファイル名と行番号）を確かめる。</p></li>
+<li><p>その行で、何が起きると予想していたか、実際には何が起きたかを考える。</p></li>
+<li><p>原因の仮説を立て、それを確かめるためにコードを変えるか、値を表示してみる。</p></li>
+</ol>
+<p>この手順を繰り返すことで、エラーから原因を推測する力（デバッグのスキル）が育つ。第 7 章の誤答ノートと同じように、遭遇したエラーと原因を記録しておくと、同じ誤りを繰り返しにくくなる。</p>
+</section>
+<section id="id11">
+<h3><span class="section-number">14.2.4. </span>ドキュメントの読み方<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>プログラミングでは、言語やライブラリの公式ドキュメントを読む力が欠かせない。第 6 章で述べたように、関数の引数のような細かな情報は覚えなくてよく、必要なときにドキュメントで調べればよい。</p>
+<ul class="simple">
+<li><p>最初は、ドキュメントのチュートリアルや入門の章を読む。リファレンス（全機能の一覧）は、慣れてから調べものに使う。</p></li>
+<li><p>知りたいことがあるときは、ウェブ記事よりも先に公式ドキュメントを確かめる習慣をつける。ウェブ記事の情報は古いことがある。</p></li>
+<li><p>ドキュメントのコード例は、実際に実行して、結果を確かめる。</p></li>
+</ul>
+</section>
+</section>
+<section id="id12">
+<h2><span class="section-number">14.3. </span>数学・理論系<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<p>数学や物理学のような理論系の分野では、定義、定理、証明が積み重なって体系をなしている。前の内容を理解していないと、後の内容が理解できない。第 2 章のスキーマと第 3 章の認知負荷の考え方が特に重要になる。</p>
+<section id="id13">
+<h3><span class="section-number">14.3.1. </span>定義と例<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<p>新しい概念を学ぶときは、定義を正確に覚えるとともに、具体例と反例（定義を満たさない例）を自分で作る。</p>
+<ul class="simple">
+<li><p>定義を、教材を見ずに書けるようにする（第 5 章の検索練習）。</p></li>
+<li><p>定義を満たす例を 3 つ以上、満たさない例を 2 つ以上考える。</p></li>
+<li><p>定義の条件を 1 つ外すと何が変わるかを考える。</p></li>
+</ul>
+<p>これは第 5 章の具体例と抽象化、精緻化質問の実践である。</p>
+</section>
+<section id="id14">
+<h3><span class="section-number">14.3.2. </span>証明を読む・書く<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<p>証明を読むときは、1 行ずつ、なぜその行が前の行から導かれるのかを確かめる（第 5 章の自己説明）。分からない行があれば、そこで止まって考える。読み終えたら、証明の大まかな方針（どのような考え方で示しているのか）を 1〜2 文で書く。その後、教材を閉じて、証明を自分で再現してみる。</p>
+<p>証明を丸暗記する必要はない。方針を覚えておけば、細部は自分で埋められるはずである。細部を埋められなければ、その部分の理解が不十分である。</p>
+</section>
+<section id="id15">
+<h3><span class="section-number">14.3.3. </span>演習の進め方<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<p>Pólya（1945）は、数学の問題を解く過程を以下の 4 つの段階に分けた。この枠組みは、演習の進め方の指針として今でも役立つ。</p>
+<table class="docutils align-default" id="id27">
+<caption><span class="caption-number">表 14.1 </span><span class="caption-text">Pólya の問題解決の 4 段階</span><a class="headerlink" href="#id27" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>段階</p></th>
+<th class="head"><p>問いの例</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>問題を理解する</p></td>
+<td><p>求めるものは何か。与えられているものは何か。条件は何か。図を描けるか。</p></td>
+</tr>
+<tr class="row-odd"><td><p>計画を立てる</p></td>
+<td><p>似た問題を以前に解いたことはないか。使えそうな定理は何か。問題を簡単にできないか。</p></td>
+</tr>
+<tr class="row-even"><td><p>計画を実行する</p></td>
+<td><p>各段階が正しいことを確かめられるか。</p></td>
+</tr>
+<tr class="row-odd"><td><p>振り返る</p></td>
+<td><p>結果を確かめられるか。別の方法で導けるか。この方法を他の問題に使えるか。</p></td>
+</tr>
+</tbody>
+</table>
+<p>特に最後の「振り返る」段階は、解けたことに満足して省略されやすいが、第 7 章の転移を促すうえで重要である。</p>
+<p>また、第 5 章で見たように、交互練習は数学の問題で効果が確認されている（Rohrer と Taylor, 2007）。章ごとの演習を終えたら、複数の章の問題を混ぜて解く。</p>
+</section>
+</section>
+<section id="id16">
+<h2><span class="section-number">14.4. </span>資格試験<a class="headerlink" href="#id16" title="Link to this heading"></a></h2>
+<p>資格試験の学習には、明確な期限（試験日）と、明確な目標（合格点）がある。独学の中では、計画を立てやすい分野である。</p>
+<section id="id17">
+<h3><span class="section-number">14.4.1. </span>過去問題の使い方<a class="headerlink" href="#id17" title="Link to this heading"></a></h3>
+<p>過去問題は、資格試験の学習で最も重要な教材である。過去問題を解くことは、検索練習であり、出題の傾向を知る方法でもあり、理解度を確かめる方法でもある。</p>
+<ul class="simple">
+<li><p>早い段階で解いてみる：学習の初めに、過去問題を 1 回分解いてみる。ほとんど解けなくてよい。出題の範囲、形式、水準を知ることで、何をどこまで学べばよいかが分かる。</p></li>
+<li><p>解いた後の振り返りを重視する：第 7 章で説明したように、間違えた問題の原因を特定し、解説を読んだ後に解き直す。</p></li>
+<li><p>答えを覚えてしまうことに注意する：同じ問題を繰り返し解くと、問題と答えの組み合わせを覚えてしまう。正解できたかどうかより、正解の理由を説明できるかで判断する。選択肢の問題なら、誤りの選択肢がなぜ誤りなのかも説明できるようにする。</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3><span class="section-number">14.4.2. </span>試験日から逆算した計画<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+<p>試験日から逆算して、学習の段階を計画する（第 12 章）。</p>
+<table class="docutils align-default" id="id28">
+<caption><span class="caption-number">表 14.2 </span><span class="caption-text">試験日から逆算した計画の例（6 か月前に開始する場合）</span><a class="headerlink" href="#id28" title="Link to this table"></a></caption>
+<colgroup>
+<col style="width: 20.0%" />
+<col style="width: 80.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>時期</p></th>
+<th class="head"><p>主な学習</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>6 か月前</p></td>
+<td><p>過去問題を 1 回分解いて現状を知る。学習ロードマップと計画を立てる。</p></td>
+</tr>
+<tr class="row-odd"><td><p>5〜3 か月前</p></td>
+<td><p>教材で範囲全体を一通り学ぶ。章ごとに練習問題を解く。間隔反復で用語を覚える。</p></td>
+</tr>
+<tr class="row-even"><td><p>3〜1 か月前</p></td>
+<td><p>過去問題を分野別に解く。弱点の分野を重点的に学び直す。</p></td>
+</tr>
+<tr class="row-odd"><td><p>1 か月前〜直前</p></td>
+<td><p>過去問題を、本番と同じ時間で通して解く。間違えた問題を解き直す。新しい教材には手を出さない。</p></td>
+</tr>
+<tr class="row-even"><td><p>前日</p></td>
+<td><p>軽い復習にとどめ、十分に眠る（第 11 章）。</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id19">
+<h3><span class="section-number">14.4.3. </span>交互練習と本番に近い練習<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<p>本番の試験では、さまざまな分野の問題が混ざって出題される。分野ごとの学習が一通り終わったら、分野を混ぜて解く（第 5 章の交互練習）。また、試験の直前の時期には、本番と同じ時間、同じ形式で過去問題を通して解く。これによって、時間配分の練習ができ、本番の環境に慣れることができる（第 11 章の試験の不安への対処）。</p>
+</section>
+</section>
+<section id="id20">
+<h2><span class="section-number">14.5. </span>実技・趣味<a class="headerlink" href="#id20" title="Link to this heading"></a></h2>
+<p>楽器、スポーツ、絵画、料理、手芸のような実技の学習は、主に第 8 章のスキルの習得にあたる。</p>
+<section id="id21">
+<h3><span class="section-number">14.5.1. </span>手本を見る<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<p>実技の学習の初期（第 8 章の認知段階）では、よい手本をよく見ることが重要である。手本の動画を、速度を落として見る、部分ごとに繰り返し見るなどして、動作を細かく観察する。何が重要なのかを言葉で整理しておくと、練習のときに意識しやすくなる。</p>
+</section>
+<section id="id22">
+<h3><span class="section-number">14.5.2. </span>記録する<a class="headerlink" href="#id22" title="Link to this heading"></a></h3>
+<p>実技では、自分の動作を自分で見ることが難しい。練習を録音・録画して、手本と比べる。これは第 8 章のフィードバックを得る方法である。また、作品や演奏の記録を時系列で残しておくと、上達を実感でき、意欲を保つのに役立つ（第 10 章）。</p>
+</section>
+<section id="id23">
+<h3><span class="section-number">14.5.3. </span>フィードバックを得る<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<p>独学で実技を学ぶときは、自分では気づきにくい癖が身についてしまうことがある。特に、体を痛めるおそれのある動作（楽器の構え方、スポーツのフォームなど）は、初期の段階で専門家の指導を受けることを勧める。月に 1 回の個人指導を受けるなど、独学と指導を組み合わせる方法もある。</p>
+</section>
+<section id="id24">
+<h3><span class="section-number">14.5.4. </span>楽しむことを忘れない<a class="headerlink" href="#id24" title="Link to this heading"></a></h3>
+<p>趣味の学習では、上達することだけが目的ではない。第 8 章の限界的練習は上達には効果的だが、楽しい活動ではないことが多い。練習の時間の一部を限界的練習に使い、残りは好きな曲を弾く、好きなものを描くなど、楽しむための時間にするとよい。楽しむことは、内発的動機づけ（第 10 章）を保ち、学習を長く続けるための力になる。</p>
+</section>
+</section>
+<section id="id25">
+<h2><span class="section-number">14.6. </span>この章のまとめ<a class="headerlink" href="#id25" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>語学：語彙は間隔反復で文脈とともに覚える。自分の水準に合った多読・多聴をする。話す機会を意識して作る。</p></li>
+<li><p>プログラミング：写経は考えながら行う。小さく作って動かす。エラーを読んで原因を推測する。公式ドキュメントを読む。</p></li>
+<li><p>数学・理論系：定義には例と反例を作る。証明は 1 行ずつ自己説明しながら読む。問題を解いた後に振り返る。</p></li>
+<li><p>資格試験：過去問題を早い段階から使う。試験日から逆算して計画する。分野を混ぜ、本番に近い形で練習する。</p></li>
+<li><p>実技・趣味：手本をよく見る。自分を記録する。専門家のフィードバックを取り入れる。楽しむことを忘れない。</p></li>
+</ul>
+</section>
+<section id="id26">
+<h2><span class="section-number">14.7. </span>やってみよう<a class="headerlink" href="#id26" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>自分の学習分野に最も近い節を読み、まだ試していない方法を 1 つ選んで、1 週間試す。</p></li>
+<li><p>自分の学習分野について、本章と同じ形式で、知識の学習とスキルの学習に分けて、使う方法を書き出す。</p></li>
+<li><p>他の分野の節で紹介されている方法のうち、自分の分野にも応用できそうなものを 1 つ探す。</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="13_generative_ai.html" class="btn btn-neutral float-left" title="13. 生成 AI と独学" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="15_reading_research.html" class="btn btn-neutral float-right" title="15. 学習科学の情報の読み方" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Nunu_3060.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

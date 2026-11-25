@@ -1,0 +1,15 @@
+/* 学習法・主張ごとのエビデンスの強さの表示 */
+p.evidence {
+    display: inline-block;
+    margin: 0 0 12px 0;
+    padding: 2px 10px;
+    border-left: 4px solid #2980b9;
+    background: #eef5fb;
+    font-weight: bold;
+}
+
+/* 表のセル内で長い文章を折り返す */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
